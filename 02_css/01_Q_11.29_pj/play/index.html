@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title><script src="Jquery/jquery-3.3.1.min.js"></script>
+    <script>
+    start();
+    
+    var imgs = 3;
+    var now = 0;
+    
+    function start(){
+        $(".imgs>img").eq(0).siblings().css({"margin-left":"-4000px"});
+        setInterval(function(){slide()},1500);
+        }
+        
+    function slide(){
+        now = now == imgs?0:now+=1;
+        $(".imgs>img").eq(now-1).css({"margin-left":"-4000px"});
+        $(".imgs>img").eq(now).css({"margin-left":"0px"});
+    }
+        
+    </script>    <script src="Jquery/company.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div id="warp">
+
+        <!-- 헤더 -->
+        <div id="head">
+            <a href="#">
+                <div class="icon_nom">
+                    <img src="imgs/tool.png" alt="">
+
+                </div>
+            </a>
+            <a href="#">
+                <div class="icon_om">
+                    <img src="imgs/tool2.png" alt="">
+                </div>
+            </a>
+            <a href="#">
+                <div id="icon_r_home">
+                    <div class="icon_nom">
+                        <img src="imgs/chat.png" alt="">
+                    </div>
+            </a>
+            <a href="#">
+                <div class="icon_om">
+                    <img src="imgs/bell.png" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- 검색 영역 -->
+    <div id="head_s">
+        <div id="Search">
+            <div id="search_in">
+                <div id="search_in_l"></div>
+                <input type="text" value="입력">
+                <div id="search_in_r"></div>
+            </div>
+        </div>
+        <div id="top_banner"><img src="imgs/meta.jpg" width="100%"></div>
+    </div>
+
+    <!-- 간단툴바 -->
+    <div id="tool">
+        <div id="tool_mod">
+            <img src="imgs/meli.png" alt="">
+            메일
+        </div>
+        <div id="tool_mod">
+            <img src="imgs/meli.png" alt="">
+            메일
+        </div>
+        <div id="tool_mod">
+            <img src="imgs/meli.png" alt="">
+            메일
+        </div>
+        <div id="tool_mod">
+            <img src="imgs/meli.png" alt="">
+            메일
+        </div>
+        <div id="tool_mod">
+            <img src="imgs/meli.png" alt="">
+            메일
+        </div>
+        <div id="tool_mod">
+            <img src="imgs/meli.png" alt="">
+            메일
+        </div>
+    </div>
+
+    <!-- 중앙 -->
+    <div id="mid">
+        <div id="mid_l">
+
+            <div id="mid_l_banner">
+                <div id="imgslide" class="all">
+                    <div class="imgs">
+                        <img src="imgs/meta.jpg" width="100%" alt="">
+                        <img src="imgs/meta2.jpg" width="100%" alt="">
+                        <img src="imgs/ping.png" width="100%" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="mid_l_rot">
+                뉴수 스탠드
+                <div id="mid_l_rot_news">
+                    전체언론사 ｜　연합뉴스　어쩌구　저쩌꾸
+                    어쩌구　저쩌꾸어쩌구　저쩌꾸어쩌구　저쩌꾸
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="mid_r">fawfawwf</div>
+
+    </div>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>lottoV0.2.0</title>    
+    <script src="common.js"> </script>
+    <script src="monster.js"> </script>
+    <script src="character.js"> </script>
+    <script src="functions.js"> </script>
+    <script src="main.js"> </script>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <!-- [v0.15.0 업데이트 내용]
+    - 최초 turnCount 값을 0에서 1로 수정//
+    - 이동 버튼 추가(동, 서, 남, 북, 위, 밑)//
+    - 이동 함수들을 추가( 함수에서 이동 메세지 출력과 턴진행 수행 )//
+    - 처음에 currentMode 값을 "대기" 로 수정하여 전투가 바로 시작되지 않도록 수정함//
+    - 전투시작 메시지 삭제 (추후 전투모드 전환 시 재추가 예정 )//
+    - procNormalTurn() 내 텍스트 삭제 함수 tvClear() 제거 ?????????????????
+    - procNormalTurn() 내에 메세지 출력 변경. "특별한 것은 보이지 않는다.\n" -->
+
+
+    <div id="all">
+        <div id="left" >
+            <div id="character_img">
+                <img id="img" src="img_mein.png" width="100%">
+            </div>
+            <div id="inputtextdiv">
+                <input type="button" id="turn" value="다음" onclick="turngo()">
+                <div class="div_sero">
+                    <input type="button" id="move_up" value="위" onclick="moveUp()">
+                <div class="div_garo">
+                <input type="button" id="move_n" value="북" onclick="moveN()">
+                <input type="button" id="move_w" value="◀" onclick="moveW()">
+                <input type="button" id="move_e" value="▶" onclick="moveE()">
+                <input type="button" id="move_s" value="남" onclick="moveS()">
+            </div>
+            <input type="button" id="move_do" value="아래" onclick="moveDo()">        
+        </div>
+                <input type="text" id="turn_number" value="1" >
+            </div>
+            <textarea id ="gameobject"></textarea>
+            <textarea id="screenPlayerInfo"></textarea>
+        </div>        
+        <textarea id="main_textarea"  placeholder="메인 텍스트 창"></textarea>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,147 @@
+body {
+background-color: antiquewhite;}
+
+#myLayout {
+    background-color: cornflowerblue;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+#top {
+    width: 1600px;
+    height: 80px;
+    background-color:white;
+    display: flex;
+    position: absolute;
+    margin: 0px;
+}
+
+    #top_mid {
+        text-align: center;
+        background-color: aliceblue;
+        position: absolute;
+        top: 0px;
+    }
+    .top_l {
+        border: 1px black solid;
+        padding: 10px;
+        justify-content: center;    /* 수평(가로) 정렬이 가운데로 됨 */
+        align-items: center; /*★*/
+        display: flex;
+        /* float: left; */
+    }
+    #top_r_1{        position: absolute; /* left, right, top, bottom 가능 */        
+        bottom: 0px;
+        right: 0px;
+        display: flex;
+    height: 80px;}
+    .top_r {
+        border: 1px black solid;
+        padding: 10px;
+        justify-content: center;    /* 수평(가로) 정렬이 가운데로 됨 */
+        align-items: center; /*★*/
+        display: flex;
+        position: relative; /* left, right, top, bottom 가능 */        
+        bottom: 0px;
+        right: 0px;
+        /* float: right */
+    }
+    #bk {background-color: black;    color: aliceblue;}
+    .top_link {height: 80px;}
+
+    /* 구분 */
+
+    #bg {width: 1600px; height: 1300px; background-image: url(bg.jpg);
+         background-size: cover;}
+
+    /* 구분 */
+
+    #left {
+        margin-left: 150px;
+        width: 700px;
+        height: 800px;
+        /* background-color: aqua; */
+        display: flex;  
+        position: absolute;
+        top: 200px;
+        
+    }
+
+        #left_a {
+            width: 100px;
+            padding-left: 15px;
+            padding-right: 15px;
+            /* background-color: bisque; */
+            text-align: center;
+            
+        }
+
+        .left_a_img {
+            width: 70px;
+           margin-bottom: 15px;
+        }
+
+        #left_b {
+            width: 600px;
+            text-align: left;
+            padding-left: 15px;
+            padding-right: 15px;
+            /* background-color: rgb(255, 140, 0); */
+        }
+        #left_b_1f {
+            height: 50px;
+            margin: 5px;
+            align-items: center; /*★*/
+            color: aliceblue;
+            font-size: 20pt;
+            font-weight: 800;
+        }
+        .in {margin-top: 15px;
+            width: 600px;
+            height: 5px; 
+            background-color: aliceblue;
+            }
+
+        #left_b_2f {
+            height: 300px;
+            margin: 5px;
+            align-items: center; /*★*/
+            font-size: 32pt;
+            font-weight: bold;
+            line-height: 50px;
+            color: aliceblue;
+            /* border-right-color: aquamarine; */
+            display: flex;
+
+        }
+        .zero {
+            height: 150px;
+        }
+        #left_b_3f {
+            height: 100px;
+            margin: 5px;
+            color: aliceblue;
+            font-size: 16pt;
+            font-weight: 800;
+        }
+        #left_b_3f_img{
+            background-color: antiquewhite;
+        }
+
+    #but
+    {
+        background-color: burlywood;
+        width: 1600px;
+        height: 300px;
+        margin: auto;
+    }
+
+    a {
+        font-style: normal;
+        color: white;
+        text-decoration-line: none;
+        font-size: 16pt;
+    }
+    

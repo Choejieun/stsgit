@@ -1,0 +1,252 @@
+#wrap {
+    width:  1340px;
+    margin: auto;
+}
+
+div {
+    display: block;
+}
+
+body, input, textarea, select, button, table {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+/* 기본 */
+
+#head {
+    width:  1340px;
+
+    height: 50px;
+    display: flex;
+    margin-top: 20px;
+    margin: auto;
+
+    /* background-color: aqua; */
+    position: relative;  /*이놈이 중요*/
+
+    margin-bottom: 20px;
+    
+
+}
+    .icon_nom>img {
+        width: 44px;
+        height: 44px;
+        padding: 3px;
+        /* background-color: black; */
+        
+    }
+    
+    .icon_om>img {
+        width: 44px;
+        height: 44px;
+        padding: 3px;
+        margin-left: 20px;
+        /* background-color: black; */
+    }
+
+    #icon_r_home {
+        /* background-color: mediumaquamarine; */
+        position: absolute;
+        right: 0px;
+        display: flex;
+
+    }
+
+#head_s {
+    width: 1340px;
+    height: 100px;
+    /* background-color: aquamarine; */
+    margin: auto;
+    justify-content: center;    /* 수평(가로) 정렬이 가운데로 됨 */
+    align-items: center; /*★*/
+    display: flex;
+
+    position: relative;
+}
+
+
+#top_banner{
+    position: absolute;
+    right: 0px;
+    background-color: black;
+    width: 200px;
+    height: 100px;
+    overflow:hidden
+}
+
+
+
+
+
+
+
+    #Search
+    {
+        border: 1px solid black;
+        border-radius: 60px;
+        width: 800px;
+        height: 80px;
+        justify-content: center;    /* 수평(가로) 정렬이 가운데로 됨 */
+        align-items: center; /*★*/
+        display: flex;
+
+    }
+        #search_in {
+            width: 750px;
+            height: 70px;
+            display: flex;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            justify-content: center;    /* 수평(가로) 정렬이 가운데로 됨 */
+            align-items: center; /*★*/
+            display: flex;
+        }   
+            #search_in_l{
+                background-color: blue;
+                width: 50px;
+                height: 50px;
+                position: relative;
+                left: 0px;
+                margin-right: 20px;
+
+            }
+            #search_in_r {
+                background-color: pink;
+                width: 150px;
+                height: 50px;
+                position: relative;
+               right: 0px;
+               margin-left: 20px;
+            }
+
+            input {
+                width: 580px;
+                height: 50px;
+                font-size: 16pt;
+                border: 0px;
+            }
+
+            input:focus{
+                background-color: pink;
+                color: gray;
+                
+            }
+            /* 해당 객체에 커서가 깜빡 거릴 때 */
+            
+
+/* 머냐...그거...메뉴튤바 */
+
+#tool {
+    margin: auto;
+    justify-content: center;    /* 수평(가로) 정렬이 가운데로 됨 */
+    align-items: top; /*★*/
+    display: flex;
+
+    position: relative ;
+    height: 200px;
+    width: 1340px;
+
+    /* background-color: blue; */
+}
+
+    #tool_mod {
+        width: 80px ;
+        display: flex;
+        /* flex-direction: row;     */
+        flex-direction: column;
+        /* flex를 할건데, row(가로) column(세로)할 것인지 정의 */
+    
+        /* justify-content: top; */
+        
+        align-items: center;
+        /* align-items: end; */
+        /* align-items: start; */
+        /* 비율비 중 위치 선정 */
+    
+        /* background-color: mediumseagreen; */
+        text-align: center;
+        color: black;
+        overflow: hidden;
+        line-height: 50px;
+        margin: 15px;
+    }
+        #tool_mod>img{
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+        }
+
+/* 중앙 */
+
+#mid {
+        width:  1340px;
+        margin: auto;
+        position: relative;  /*이놈이 중요*/
+        display: flex;
+    }
+
+    #mid_l {
+        width: 1000px;
+        margin-right: 20px;    
+        /* border: solid 1px gray;
+        border-radius: 10px;
+        padding: 10px; */
+    }
+    #mid_r {
+        width: 300px;
+        height: 1000px;
+        border: solid 1px gray;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    #mid_l_banner{
+        align-items: center;
+        background-color: aquamarine;  
+        border-radius: 10px;  
+        overflow: hidden;
+        width: 1000px;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+/**/
+
+
+.siddff{width:960px;}
+#imgslide {height:350px;}
+.all {float:left; width:100%;}
+img {max-width:100%}
+.imgs {position:relative; overflow:hidden; background-color:#000; height:350px;}
+.imgs>img {position:absolute; transition:all 0.1s; width:100%;}
+
+
+
+/**/
+
+    #mid_l_rot {
+        width: 940px;
+        height: 745px;
+        border: solid 1px gray;
+        border-radius: 10px;
+        padding: 30px;
+        
+    }
+
+    #mid_l_rot_news{
+        background-color:rgb(226, 226, 226);
+        justify-content: center;    /* 수평(가로) 정렬이 가운데로 됨 */
+        align-items: center; /*★*/
+        display: flex;
+        color: black;
+        font-weight: 400;
+        font-size: 9pt;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 70px;
+        border-radius: 10px;
+    }

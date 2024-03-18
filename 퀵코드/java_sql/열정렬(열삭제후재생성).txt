@@ -1,0 +1,18 @@
+<%@page import="java.sql.DatabaseMetaData"%> <!-- 이 import 문 추가 -->
+(jsp 전용 임포트)
+
+try {
+// I_NO 열이 존재하는지 확인
+DatabaseMetaData metaData = ProcBoard.con.getMetaData();
+ResultSet columns = metaData.getColumns(null, null, "Inventory", "IM_NO");
+if (columns.next()) {
+// I_NO 열이 존재하면 삭제
+String dropAutoIncrementColumnQuery = "ALTER TABLE Inventory DROP COLUMN IM_NO;";
+ProcBoard.st.executeUpdate(dropAutoIncrementColumnQuery);
+}
+
+// 새로운 열 추가
+String addAutoIncrementColumnQuery = "ALTER TABLE Inventory ADD COLUMN IM_NO INT AUTO_INCREMENT PRIMARY KEY;";
+ProcBoard.st.executeUpdate(addAutoIncrementColumnQuery);
+
+**ResultSet 문은 열 정렬 후 사용

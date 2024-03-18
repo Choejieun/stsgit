@@ -1,0 +1,483 @@
+@charset "UTF-8";
+
+body {
+	background-color: #ffffff;
+	margin: auto;
+	font-family: 'NanumGothic', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #0080ff;
+}
+
+#warp {
+	width: 1200px;
+	margin: auto;
+}
+
+/* 상단영역 */
+#top {
+	height: 70px;
+	border-bottom: solid 1px #0080ff;
+	display: flex;
+	justify-content: space-between; /*양쪽정렬*/
+	align-items: center;
+	width: 100%;
+}
+
+#top>logoMOD {
+	background-color: white;
+	width: 20%;
+	/* height: 50px; */
+}
+
+#logoMOD>img { /*로고영역*/
+	left: 0px;
+	height: 50px;
+}
+
+#top>#navMOD {
+	width: 80%;
+	right: 0px;
+	justify-content: space-between; /*양쪽정렬*/
+	margin-left: 50px;
+}
+
+#top>#toolbar_login {
+	background-color: white;
+	border: solid 1px gray;
+	border-radius: 60px;
+	align-items: center;
+	text-align: center;
+	padding: 5px 5px;
+	width: 100px;
+	margin-left: 10px;
+}
+
+#top>#toolbar_login:hover {
+	background-color: #0080ff;
+	color: white;
+	border: solid 1px gray;
+	border-radius: 60px;
+	align-items: center;
+	text-align: center;
+	padding: 5px 5px;
+	width: 100px;
+	margin-left: 10px;
+}
+
+#top>#toolbar_join {
+	background-color: #0080ff;
+	border: solid 1px #0080ff;
+	border-radius: 60px;
+	align-items: center;
+	text-align: center;
+	padding: 5px 5px;
+	width: 100px;
+	margin-left: 10px;
+	color: white;
+}
+
+#top>#toolbar_join:hover {
+	background-color: white;
+	border: solid 1px gray;
+	border-radius: 60px;
+	align-items: center;
+	text-align: center;
+	padding: 5px 5px;
+	width: 100px;
+	margin-left: 10px;
+	color: #0080ff;
+}
+/* 신께 받은 nav 코드 */
+#top>nav {
+	/* 	    background-color: #333; */
+	color: #0080ff;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#top li {
+	float: left;
+}
+
+#mid_li{}
+#mid_li li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: #0080ff;
+}
+/* 신께 받은 nav 코드 [종료]*/
+
+/* 중앙영역 */
+#mid {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+#mid>#left {
+	width: 10%;
+	padding: 15px;
+}
+/* 중앙의 중앙 */
+#mid>#main {
+	  position: relative; /* 추가된 부분: mid 요소에 relative 포지션을 설정 */
+/* 	  정렬 버튼 잡아주는 역할 */
+	width: 80%;
+	padding: 15px;
+}
+
+#main>img {
+	margin-bottom: 15px;
+}
+
+#main>#title {
+	margin: 10px;
+	margin-bottom: 30px;
+	padding: 15px;
+	background-image: url("https://i.ibb.co/8DMqpn7/design-pattern-logo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 12px;
+	color: white;
+}
+
+#title>h1 {
+	line-height: 5px;
+}
+/* 중앙배너끝 */
+/* 중앙 툴바 */
+#main>#toolbar {
+	display: flex;
+	justify-content: space-between;
+	height: 60px;
+	border-bottom: 1px solid #dddddd;
+}
+
+#toolbar>#toolbar_write {
+	background-color: #0080ff;
+	border: solid 1px #0080ff;
+	border-radius: 6px;
+	align-items: center;
+	text-align: center;
+	padding: 5px 5px;
+	width: 100px;
+	margin-left: 10px;
+	color: white;
+	height: 24px;
+}
+#toolbar>a{
+		color: white;
+}
+
+#toolbar>#toolbar_write:hover {
+	background-color: white;
+	border: solid 1px gray;
+	border-radius: 6px;
+	align-items: center;
+	text-align: center;
+	padding: 5px 5px;
+	width: 100px;
+	margin-left: 10px;
+	color: #0080ff;
+	height: 24px;
+}
+
+#toolbar_ORDER {
+	background-color: white;
+	border: solid 1px gray;
+	border-radius: 6px;
+	align-items: center;
+	text-align: center;
+	padding: 5px 5px;
+	width: 100px;
+	margin-left: 10px;
+	color: #0080ff;
+	height: 24px;
+}
+
+#toolbar>#toolbar_ORDER:hover {
+	background-color: #0080ff;
+	border: solid 1px #0080ff;
+	border-radius: 6px;
+	align-items: center;
+	text-align: center;
+	padding: 5px 5px;
+	width: 100px;
+	margin-left: 10px;
+	color: white;
+	height: 24px;
+}
+
+
+
+#main>#toolbar_word {
+	display: flex;
+	justify-content: center;
+	height: 60px;
+	border-bottom: 1px solid #dddddd;
+		align-items: center;
+	text-align: center;
+}
+
+.textarea input {
+    border: none;
+    outline: none;
+    height: 20px;
+    width:180px;
+    	align-items: center;
+    	text-align: left;
+    	font-size: 10pt;
+}
+
+#toolbar_word_button {
+		border-radius: 20px;
+		border: solid 1px #808080;
+		width: 200px;
+		height: 30px;
+	text-align: right;
+	padding: 1px;
+	padding-top: 7px;
+	padding-right: 10px;
+}
+
+#toolbar_word_button:focus {
+		border-radius: 20px;
+		border: solid 2px #0080ff;		
+		width: 200px;
+		height: 30px;
+	text-align: right;
+		padding: 3px;
+}
+/* 중앙 툴바  [끝]*/
+/* 중앙 게시글(메인) */
+#main>#bbs {
+	padding: 10px 10px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #dddddd;
+}
+
+#bottom {
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+#bottom>num{
+	width: 150px;
+}
+
+#bottom_bar {
+	margin-bottom: 8px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #0080ff;
+}
+
+#bottom_bar>#idtext {
+	font-size: 9pt;
+	color: gray;
+	margin-bottom: 5px;
+}
+
+#bottom_bar>a>#titletext {
+	font-size: 9pt;
+	color: gray;
+	margin-bottom: 5px;
+}
+/* 중앙 게시글(메인) [끝]*/
+/* 중앙의 중앙 [끝]*/
+#mid>#right {
+	width: 10%;
+	padding: 15px;
+}
+
+/* 읽기영역 */
+#main>#c {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+#c>#hr_1 {
+	width: 2%;
+	height: 1px;
+	background-color: black;
+}
+
+#c>#hr_2 {
+	width: 89%;
+	height: 1px;
+	background-color: black;
+}
+/* 상단 유저정보 */
+#bbs>#user{
+	display: flex;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 20px;
+		align-items: center;
+}
+#user>img{
+	margin-right: 10px;
+	width: 50px;
+	height: 100%;
+	border-radius: 100%;
+	overflow: hidden;
+}
+#user>.idbox{
+	width: 30%;
+}
+#user>.box{
+	width:70%;
+	display: flex;
+	justify-content: flex-end; /*끝정렬*/
+	align-items: center;
+	
+}
+#user>.box>.icon{
+	width:50px;
+	height:50px;
+	align-items: center;
+	text-align: right;
+		align-items: center;
+}
+#user>.box>.icon>img{
+	width: 50%;
+	opacity: 20%;
+}
+#user>.box>.icon>img:hover{
+	width: 50%;
+	opacity: 100%;
+}
+/* 상단 유저정보 [끝] */
+
+#bbs>h1{
+	font-size: 26pt;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#bbs>#text{
+	background-color: #e1e1e1;
+	padding : 15px;
+	padding-top : 20px;
+	padding-bottom : 20px;
+	margin-bottom: 50px;
+	border-radius: 15px;
+}
+#bbs>img{
+	margin:  auto;
+	align-items:center;
+	margin-top: 30px;
+}
+/* 읽기영역 [끝]*/
+
+
+/* 글쓰기 */
+#main>h1{
+	font-size: 26pt;
+	margin-top: 20px;
+	line-height: 3px;
+	}
+#main>#text{
+	margin-bottom: 30px;
+}
+#main>.textarea{
+		font-size:14pt;
+}
+.inputvalue{
+	font-size:14pt;
+	width: 100%;
+	height: 30px;
+	margin-bottom: 6px;
+}
+.inputvalue2{
+	font-size:14pt;
+	width: 99.3%;
+	height: 20px;
+	margin-bottom: 6px;
+}
+	
+/* 글쓰기 [끝]*/
+
+#toggleButton {
+ width: 100px;
+  height: 35px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 6px;
+  text-align: center;
+  padding: 5px;
+  margin-left: 10px;
+  color: #0080ff;
+  cursor: pointer; /*마우스 커서 올라갔을 떄 변형*/
+  display: inline-flex; /* 수정된 부분: inline-flex로 변경 */
+  justify-content: center;
+  align-items: center;
+
+}
+#toggleButton:hover {
+	background-color: #0080ff; /* 마우스 호버 시 배경색 변경 */
+  border: solid 1px #0080ff; /* 마우스 호버 시 테두리 색상 변경 */
+color: white;
+}
+
+#main #modal { /*# absolute : 앞서 선언된 기준 안에서 상대적으로 이동하도록 선언*/
+      display: none;
+ position: absolute; /* 변경된 부분: absolute 포지션으로 설정 */
+ /*상위 relative 를 기준으로 상대적 위치 조정*/
+/* top: 410px; */
+top: 360px;
+/* right:-5%; */
+right:10px;
+/*       transform: translate(-50%, -50%); */
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000; /*★#z-index : 쌓임 순서, 레이어링 명령어★*/
+    }
+
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 999; /*★#z-index : 쌓임 순서, 레이어링 명령어★*/
+    }
+    
+    
+ #modal li a {
+	display: block;
+	color: black;
+	text-align: left;
+	padding: 3px;
+	text-decoration: none;
+}
+
+#modal li a:hover {
+	color: #0080ff;
+}

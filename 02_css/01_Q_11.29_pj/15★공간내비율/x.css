@@ -1,0 +1,42 @@
+#x{
+    display: flex;
+    width: 500px;
+}
+/* flex 호출로 선언완료 */
+
+.z{
+    width:100px;
+    height:100px;
+}
+
+.zz{
+    margin:10px;
+}
+
+#a{
+    background-color: red;
+    flex-basis: 10%;
+    /* 부모 flex 공간 내 비율 나누기 선언 */
+
+    height:100px;
+}
+#b{
+    background-color: orange;
+    flex-basis: 30%;
+    height:100px;
+}
+#c{
+    background-color: yellow;
+    flex-basis: 20%;
+    height:100px;
+}
+#d{
+    background-color: green;
+    flex-basis: 20%;
+    height:100px;
+}
+#e{
+    background-color: blue;
+    flex-basis: 30%;
+    height:100px;
+}

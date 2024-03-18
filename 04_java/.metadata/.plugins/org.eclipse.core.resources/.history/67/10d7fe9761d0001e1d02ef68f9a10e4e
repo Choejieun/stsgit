@@ -1,0 +1,40 @@
+package com.peisia.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.peisia.service.TestService;
+
+import lombok.AllArgsConstructor;
+import lombok.extern.log4j.Log4j;
+
+@Log4j
+//<logger name="com.peisia.controller">	이 데이터를 정의, info를 사용할 수 있게 됨		
+//<level value="info" />		
+//</logger>	
+@RequestMapping("/test/*")
+//???????????????????????????????????????????
+@AllArgsConstructor
+//(매개변수 생성자) 
+@Controller
+//개체 생성에 대해 스프링이 활동해줌을 정의
+public class TestController {
+	private TestService service;
+	//인터페이스
+	
+	@GetMapping("/getOnePlusTwo")
+	//위 주소로 입력 시 아래 내용 출력된다는 정의
+	
+//	public void getOnePlusTwo(Model model) {
+	public void getOnePlusTwo() {
+		log.info("getOnePlusTwo ==========================================");
+		String one = service.getOne();
+		String two = service.getTwo();
+		Integer sum = Integer.parseInt(one) + Integer.parseInt(two); 
+		
+		log.info("(여기 컨트롤러임) 1 더하기 2는 = " + sum);
+		System.out.println("똥싸개");
+		//model.addAttribute("sum",sum);
+	}
+}

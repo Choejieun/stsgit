@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>lottoV0.2.0</title>    
+    <script src="common.js"> </script>
+    <script src="monster.js"> </script>
+    <script src="character.js"> </script>
+    <script src="functions.js"> </script>
+    <script src="main.js"> </script>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <!-- - 메세지 textarea 의 글이 길어질 경우 스크롤이 자동으로 아래로 내려가도록 처리
+    - main.js 의 function 들을 functions.js 로 분리함
+    - endBattle() 의 currentMode = "비전투" 를 "대기" 로 변경 -->
+    <!-- textarea.scrollTop = textarea.scrollHeight; -->
+
+
+    <div id="all">
+        <div id="left" >
+            <div id="character_img">
+                <img id="img" src="img_mein.png" width="100%">
+            </div>
+            <div id="inputtextdiv">
+                <input type="button" id="turn" value="다음" onclick="turngo()">
+                <input type="text" id="turn_number" value="0" >
+            </div>
+            <textarea id ="gameobject"></textarea>
+            <textarea id="screenPlayerInfo"></textarea>
+        </div>        
+        <textarea id="main_textarea"  placeholder="메인 텍스트 창"></textarea>
+    </div>
+
+    
+</body>
+</html>

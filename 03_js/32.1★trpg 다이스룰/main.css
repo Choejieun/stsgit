@@ -1,0 +1,26 @@
+#a_box {
+    width: 300px;
+    height: 50px;
+    background-color: pink;
+    resize: none; /* 사용자 조절 금지 */
+
+}
+#story_box {
+    width: 450px;
+    background-color: skyblue;
+    resize: none; /* 사용자 조절 금지 */
+
+}
+#screen{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1fr 1fr 1fr;
+    height: 400px;
+}
+#rpc_user{
+}
+#rpc_vs{
+    width: 200px;    
+}
+#rpc_com{
+}

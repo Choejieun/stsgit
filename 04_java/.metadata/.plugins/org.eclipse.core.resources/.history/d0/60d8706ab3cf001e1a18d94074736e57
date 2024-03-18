@@ -1,0 +1,26 @@
+package com.peisia.service;
+
+import org.springframework.stereotype.Service;
+
+import lombok.Setter;
+import lombok.extern.log4j.Log4j;
+
+@Log4j
+@Service
+//@AllArgsConstructor
+public class TestServiceImpl implements TestService {
+	
+	@Setter(onMethod = @Autowired)
+	
+	
+	@Override
+	public String getOne() {
+		return null;
+	}
+
+	@Override
+	public String getTwo() {
+		return null;
+	}
+	
+}

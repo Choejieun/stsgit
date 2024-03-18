@@ -1,0 +1,205 @@
+.red {
+    color: red;
+}
+
+.damage {
+    font-weight: 800;
+    color: red;
+}
+
+.bule {
+    color: blue;
+}
+
+h1 {
+    color: deeppink;
+}
+
+body {
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    /* 배경 이미지를 창에 맞게 조절 */
+    background-position: center;
+    /* 배경 이미지를 가운데 정렬 */
+}
+
+#all {
+    width: 1000px;
+    height: 800px;
+    background-color: ivory;
+    border: 1px black solid;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#left {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#character_img {
+    width: 380px;
+    height: 250px;
+    background-color: aquamarine;
+    border-radius: 60px;
+    resize: none;
+    margin: 5px;
+    overflow: hidden;
+}
+
+#screenPlayerInfo {
+    width: 280px;
+    height: 240px;
+    text-align: left;
+    line-height: 25px;
+    background-color: rgb(61, 0, 0);
+    border-radius: 60px;
+    resize: none;
+    margin: 5px;
+    border: none;
+    padding: 50px;
+    color: white;
+    font-size: 15px;
+
+}
+
+#inputtextdiv {
+    width: 340px;
+    height: 100px;
+    text-align: center;
+    line-height: 25px;
+    background-color: rgb(61, 0, 0);
+    border-radius: 30px;
+    resize: none;
+    margin: 5px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-size: 15px;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.div_garo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+.div_sero {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#turn {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: coral;
+    border-radius: 50px;
+}
+
+/* 북 */
+#move_n {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    background-color: red;
+    color: white;
+}
+
+/* 남 */
+#move_s {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+}
+
+/* 서 */
+#move_w {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+/* 동 */
+#move_e {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+/* 위 */
+#move_up {
+    width: 180px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+/* 아래 */
+#move_do {
+    width: 180px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+
+
+#turn_number {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 50px;
+
+}
+
+#gameobject {
+    width: 340px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    resize: none;
+    margin: 5px;
+    border: none;
+    padding: 20px;
+    color: rgb(255, 0, 0);
+    font-size: 15px;
+}
+
+#main_textarea {
+    width: 480px;
+    height: 690px;
+    padding: 50px;
+    line-height: 30px;
+    border-radius: 30px;
+    resize: none;
+    border: none;
+    margin: 5px;
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>lottoV0.2.0</title>    
+    <script src="common.js"> </script>
+    <script src="monster.js"> </script>
+    <script src="character.js"> </script>
+    <script src="main.js"> </script>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <!-- - 전투 종료 후 턴 진행 시 전투가 더 진행되지 않게 처리
+    - 전투 종료 시 적 오브젝트 처리(전투가 끝났으니 더 이상 안나오게) -->
+
+    <div id="all">
+        <div id="left" >
+            <div id="character_img"></div>
+            <div id="inputtextdiv">
+                <input type="button" id="turn" value="다음" onclick="turngo()">
+                <input type="text" id="turn_number" value="0" >
+            </div>
+            <textarea id ="gameobject"></textarea>
+            <textarea id="screenPlayerInfo"></textarea>
+        </div>        
+        <textarea id="main_textarea"  placeholder="메인 텍스트 창"></textarea>
+    </div>
+
+    
+</body>
+</html>

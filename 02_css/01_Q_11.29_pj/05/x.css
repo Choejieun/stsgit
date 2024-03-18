@@ -1,0 +1,38 @@
+#x {
+    display: flex;
+    /* 가로or세로 축으로 일렬 이동, 부모역할 */
+    height: 100px;
+
+    /* 세로(높이) 정보는 부모 태그에서 끝남 */
+}
+
+#x_1 {
+    display: flex;
+    /* 가로or세로 축으로 일렬 이동, 부모역할 */
+    height: 300px;
+
+    /* 세로(높이) 정보는 부모 태그에서 끝남 */
+}
+
+/* id는 독립, class는 복수 */
+#a {
+    background-color: red;
+    width: 100px;
+}
+#b {
+    background-color: orange;
+    width: 100px;
+}
+#c {
+    background-color: yellow;
+    width: 200px;
+}
+#d {
+    background-color: green;    
+    width: 100px;
+}
+#e {
+    background-color: blue;
+    width: 100px;
+}
+

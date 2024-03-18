@@ -1,0 +1,183 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>									
+    <c:set var="cp" value="${pageContext.request.contextPath}" /><!-- el변수 cp에 경로저장 -->									
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/resources/CyphersMain.css" >
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="warp">
+<form action="/Cyphers/cyphersMain">
+<input type="text" name="username">
+<input type="submit" value="검색">
+</form>
+
+<pre>
+닉네임 : ${nickname}
+급수 : ${grade}
+대표캐릭터 : ${characterName }
+<img src="https://img-api.neople.co.kr/cy/characters/${characterId }" alt="#">
+
+클랜 : ${clanName}
+<!-- 승률 = (승수 / 경기 수) x 100% -->
+이번시즌 일반전 전적 [승률 : ${normalRate }]
+승리 : ${normalWin }
+패배 : ${normalLose }
+중단 : ${normalStop }
+
+이번시즌 공식전 전적
+승리 : ${ratingWin }
+패배 : ${ratingLose }
+중단 : ${ratingStop }
+</pre>
+파티 승률 구하기<br>
+<%int i = 0; %>
+<%int k = 0; %>
+<script type="text/javascript">
+						var array = []; // 값을 저장할 배열
+						var axx = 1;
+				        document.write("＠" + array+'/'+array.length);
+</script>
+<c:forEach var="Matches" items="${PartyInfoArray}">
+<c:if test="${not empty Matches.playInfo.partyInfo}"> <!-- 파티or솔로 검사 -->
+<c:if test="${Matches.playInfo.result eq 'lose'}"> <!-- 패배 -->
+	 		<c:forEach var="partInfo" items="${Matches.playInfo.partyInfo}"> <!-- 파티원 찾기 -->
+<%-- 				${partInfo.nickname};  <!-- 파티원--> --%>
+						<script type="text/javascript">
+			            var nickname = "${partInfo.nickname}";
+						
+				        // 배열에 동일한 닉네임이 있는지 확인하고, 없으면 배열에 추가
+			            if (array.includes(nickname)) {
+// 			            	document.write("▼"+array.length+"▼");
+			                var index = array.indexOf(nickname);
+			                axx++;
+			                document.write("★Index of " + nickname + ": " + (index+1));
+			            }else {
+			                array.push(nickname);
+			                // 배열에서 동일한 닉네임의 인덱스 확인
+						}
+			        // 배열 내용 출력
+			        document.write("※" + array+'/'+array.length);
+							
+// 							for (var i = 0; i < 10; i++) {
+// 								var value = getRandomValue(); // 임의의 값을 얻는 함수 호출
+// 								// 배열에 동일한 값이 이미 존재하는지 확인
+// 								if (array.includes(value)) {
+// 									// 동일한 값이 존재하면 임의의 값 대신 다른 값으로 변경
+// 									value = getRandomValue(); // 새로운 임의의 값을 얻음
+// 								}
+// 								// 중복된 값이 없는 경우에만 배열에 추가
+// 								array.push(value);
+// 							}
+// 							// 배열 내용 출력
+// 							console.log(array);
+// 							// 임의의 값을 반환하는 함수 정의
+// 							function getRandomValue() {
+// 								// 여기서는 1부터 100 사이의 임의의 정수를 반환하도록 설정했습니다.
+// 								return Math.floor(Math.random() * 100) + 1;
+// 							}
+						</script>
+					</c:forEach><!-- 파티원 찾기 -->
+ 				<%i= i+1;	%>
+				<%=i %>
+				패배<br>
+  </c:if><!-- 패배 -->
+  
+   <c:if test="${Matches.playInfo.result ne 'lose'}"><!-- 승리 -->
+	 		<c:forEach var="partInfo" items="${Matches.playInfo.partyInfo}"> <!-- 파티원 찾기 -->
+				${partInfo.nickname};  <!-- 파티원-->
+			</c:forEach><!-- 파티원 찾기 -->
+ 				<%k= k+1;	%>
+				<%=k %>
+				승리<br>
+  </c:if><!-- 승리 -->
+  
+</c:if>  <!-- 파티or솔로 검사 -->
+ </c:forEach>
+<hr>
+
+ <c:forEach var="Matches" items="${PartyInfoArray}">
+<div class="result">
+ <c:if test="${Matches.playInfo.result eq 'lose'}">
+ <div class="result_lose" onclick="goToLink('${Matches.matchId}')">
+ <h3>패배</h3>
+날짜 : ${Matches.date} / 맵 : ${Matches.map.name}
+<br>
+</div>
+<div class="red">
+<c:if test="${not empty Matches.playInfo.partyInfo}">
+<p class="boldfontGreen"> PARTY</p>
+ <c:forEach var="partInfo" items="${Matches.playInfo.partyInfo}">
+<div class="playinfo_main" onclick="cyphersMain('${partInfo.nickname}')">
+<div class="charactename">
+<img src="https://img-api.neople.co.kr/cy/characters/${partInfo.characterId}">${partInfo.characterName} 
+</div>
+<a href="/Cyphers/cyphersMain?username=${partInfo.nickname}">${partInfo.nickname}</a>
+</div>
+<br>
+</c:forEach>
+</c:if>
+<c:if test="${empty Matches.playInfo.partyInfo}">
+    <p class="boldfontWhite">SOLO</p>
+</c:if>
+ <div class="MY_playinfo_main">
+<div class="MY_charactename">
+<img src="https://img-api.neople.co.kr/cy/characters/${Matches.playInfo.characterId}">
+ ${Matches.playInfo.characterName}
+</div>
+${nickname} <i>ME</i>
+</div>
+</div>
+ </c:if>
+ 
+ <c:if test="${Matches.playInfo.result ne 'lose'}">
+  <div class="result_win" onclick="goToLink('${Matches.matchId}')">
+ <h3>승리</h3>
+날짜 : ${Matches.date} / 맵 : ${Matches.map.name}
+<br>
+</div>
+<div class="blue">
+<c:if test="${not empty Matches.playInfo.partyInfo}">
+<p class="boldfontGreen"> PARTY</p>
+ <c:forEach var="partInfo" items="${Matches.playInfo.partyInfo}">
+<div class="playinfo_main" onclick="cyphersMain('${partInfo.nickname}')">
+<div class="charactename">
+<img src="https://img-api.neople.co.kr/cy/characters/${partInfo.characterId}">${partInfo.characterName} 
+</div>
+${partInfo.nickname}
+</div><br>
+</c:forEach>
+</c:if>
+<c:if test="${empty Matches.playInfo.partyInfo}">
+    <p class="boldfontWhite">SOLO</p>
+</c:if>
+ <div class="MY_playinfo_main">
+<div class="MY_charactename">
+<img src="https://img-api.neople.co.kr/cy/characters/${Matches.playInfo.characterId}">
+ ${Matches.playInfo.characterName}
+</div>
+${nickname} <i>ME</i>
+</div>
+</div>
+ </c:if>
+ 
+</div>
+</c:forEach>
+
+<script>
+    function goToLink(matchId) {
+        window.location.href = '/Cyphers/cyphersMatchINFO?matches=' + matchId;
+    }
+    function cyphersMain(nickname) {
+        window.location.href = '/Cyphers/cyphersMain?username=' + nickname;
+    }
+</script>
+
+
+</div>
+</body>
+</html>

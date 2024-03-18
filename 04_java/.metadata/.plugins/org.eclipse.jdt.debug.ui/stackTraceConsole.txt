@@ -1,0 +1,5 @@
+// 주어진 데이터가 배열 형태로 반환된다고 가정합니다.
+Object[] partyInfoArray = cyMatches.matches.rows.get(0).playInfo.partyInfo;
+
+// 모델에 속성으로 배열을 추가합니다.
+model.addAttribute("PartyInfoArray_nickname", partyInfoArray);

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="button.css">
+</head>
+<body>
+
+<a href="https://cyphers.nexon.com/game/character/info/thomas" alt="Mythrill" target="_blank">
+<div class="card">
+    <div class="wrapper">
+      <img src="https://i.ibb.co/CmNT1tJ/1627893770968.png" class="cover-image" />
+    </div>
+    <p class="title">토마스찐지버거</p>
+    <img alt="" src="https://i.ibb.co/17WHMj9/1420046938853.png" class="character">
+</div> <!-- card -->
+</a>
+
+<div class="area">
+<a href="https://cyphers.nexon.com/game/character/info/thomas" alt="Mythrill" target="_blank">
+<div class="card">
+    <div class="wrapper">
+      <img id="uploaded-image" class="cover-image" />
+      </div>
+          <p class="title"></p>
+          <img alt="2번스탠드" id="uploaded-image-2" class="character"> <!-- 수정된 부분: id="uploaded-image-2"로 변경 -->
+</div> <!-- card -->
+</a>
+
+<div>
+<input type="text" id="textInput" class="upload-name" placeholder="이름을 입력하세요"><!-- 글자 바꾸기 -->
+<button onclick="changeText()">입력</button>
+</div>
+
+<div>
+    <input
+      type="file"
+      id="upload-input"
+      accept="image/*"
+      onchange="displayImage()"
+    />
+    <label for="upload-input" id="upload-label">배경 넣기</label>
+    
+    <!-- 2번 이미지 전용 -->
+    <input 
+      type="file"
+      id="upload-input-2"
+      accept="image/*"
+      onchange="displayImage2()"
+    />
+    <label for="upload-input-2" id="upload-label-2">스탠딩 넣기</label> <!-- 추가된 부분: 두 번째 이미지 업로드 버튼 -->
+
+</div>
+</div>
+
+
+
+<script type="text/javascript">
+function changeText() {
+	  // 입력된 텍스트 가져오기
+	  var newText = document.getElementById('textInput').value;
+	  // 가져온 텍스트를 <p class="title"> 요소의 텍스트로 설정
+	  document.querySelector('.area .title').textContent = newText;
+	}
+
+document.getElementById("upload-input").addEventListener("change", displayImage);
+document.getElementById("upload-input-2").addEventListener("change", displayImage2); //2번 이미지 전용
+
+function displayImage() {
+  const input = document.getElementById("upload-input");
+  const file = input.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function (event) {
+      const imageDataUrl = event.target.result;
+      updateImageSrc(imageDataUrl);
+    };
+    reader.onerror = function (error) {
+      console.error("파일을 읽는 중 오류가 발생했습니다:", error);
+    };
+    reader.readAsDataURL(file);
+  }
+}
+
+function displayImage2() { //2번 이미지 전용
+  const input = document.getElementById("upload-input-2");
+  const file = input.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function (event) {
+      const imageDataUrl = event.target.result;
+      updateImageSrc2(imageDataUrl); 
+    };
+    reader.onerror = function (error) {
+      console.error("파일을 읽는 중 오류가 발생했습니다:", error);
+    };
+    reader.readAsDataURL(file);
+  }
+}
+
+function updateImageSrc(src) {
+  const uploadedImage = document.getElementById("uploaded-image");
+  uploadedImage.src = src;
+}
+
+function updateImageSrc2(src) { //2번 이미지 전용
+  const uploadedImage2 = document.getElementById("uploaded-image-2");
+  uploadedImage2.src = src;
+}
+</script>
+
+</body>
+</html>

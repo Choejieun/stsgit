@@ -1,0 +1,19 @@
+package com.peisia.service;
+
+
+
+public class TestServiceImpl implements TestService {
+
+	@Override
+	public String getOne() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getTwo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

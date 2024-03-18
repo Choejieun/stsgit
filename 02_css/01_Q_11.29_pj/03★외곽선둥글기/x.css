@@ -1,0 +1,17 @@
+tr,td,th {
+    border: solid 1px black;
+    
+}
+
+#S{
+    margin: 50px;
+    padding: 50px;
+
+    border: 5px pink dashed;
+    border-radius: 50px;
+}
+
+img {
+    color: antiquewhite;
+    position:relative;
+}

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+/* 	width: 100vh; */
+/* 	height: 100vh; */
+    margin: 0; /* body 요소의 기본 마진 제거 */
+}
+#warp_common{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/resources/img/1323221745392.jpg');
+    background-position: center  top; 
+    background-repeat: no-repeat;
+     background-size: 1200px;
+}
+
+#warp_common input{
+	text-decoration: none;
+	width: 500px;
+	height: 80px;
+	border-radius: 50%l
+}

@@ -1,0 +1,33 @@
+package com.peisia.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.peisia.mapper.TestMapper;
+import com.peisia.spring.dto.TestDto;
+
+import lombok.Setter;
+import lombok.extern.log4j.Log4j;
+
+@Log4j
+@Service
+//@AllArgsConstructor
+public class TestServiceImpl implements TestService { //부서배정을 하는 곳
+	
+	@Setter(onMethod_ = @Autowired)
+	private TestMapper mapper;	
+	
+	@Override
+	public String getOne() {
+		log.info("원테스트 ==========");
+		TestDto tvo = mapper.getData1(); //일을 하는 부서로 이동
+		String one = tvo.getStr_data(); //완성한 일을 옮기는 일
+		return one;
+	}
+
+	@Override
+	public String getTwo() {
+		return null;
+	}
+	
+}

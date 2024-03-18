@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;SQL_32_bbs/src/Main&apos;&#x0D;&#x0A;- Original project: &apos;JavaMysqlBoard_v0.0.2&apos;&#x0D;&#x0A;- Destination element: &apos;SQL_32_bbs/src/Main&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.peisia.util.Ci.java&#x0D;&#x0A;     com.peisia.util.Cw.java" description="Copy compilation units" destination="=SQL_32_bbs/src&lt;Main" element1="/src&lt;com.peisia.util{Ci.java" element2="/src&lt;com.peisia.util{Cw.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1704940826924" units="2" version="1.0"/>
+</session>

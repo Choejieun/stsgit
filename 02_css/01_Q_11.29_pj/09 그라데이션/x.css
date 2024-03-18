@@ -1,0 +1,13 @@
+div#a {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(white, pink);
+}
+
+div#b {
+    width: 100px;
+    height: 100px;
+    /* background: linear-gradient(to right bottom, yellow, white); */
+    background: linear-gradient(90deg, rgb(0, 255, 195), white);
+    /* deg > 각도 */
+}

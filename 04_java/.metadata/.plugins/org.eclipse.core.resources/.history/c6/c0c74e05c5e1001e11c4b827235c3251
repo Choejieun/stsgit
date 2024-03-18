@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+body {
+	margin: auto;
+/* 	background-color: #ffe6ce; */
+}
+/*-----------------------------------------------*/
+#topbar {
+	position: fixed; /* 고정 위치 */
+	top: 0; /* 화면 맨 위 */
+	left: 0; /* 화면 맨 왼쪽 */
+	width: 100%; /* 전체 너비 */
+	background-color: #393939; /* 배경색 */
+	color: white; /* 글자색 */
+	padding: 10px 0px; /* 내부 여백 */
+	z-index: 1000; /* 다른 요소 위에 표시 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#topbar input {
+	width: 400px;
+	height: 30px;
+	border-radius: 20px;
+	padding: 0px 20px;
+}
+/*-----------------------------------------------*/
+
+#main_result {
+	margin: auto;
+	width: 900px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+	background-color: white;
+	padding: 15px 50px;
+}
+
+.lose {
+	font-size: 20pt;
+	font-weight: 600;
+	color: red;
+	text-align: center;
+}
+
+.win {
+	font-size: 20pt;
+	font-weight: 600;
+	color: blue;
+	text-align: center;
+}
+
+.win_area {
+	position: relative;
+	padding: 10px;
+	padding-bottom: 20px;
+	border: 1px blue solid;
+	border-radius: 20px;
+	width: 45%;
+	margin: 10px;
+	background-color: #b7dcfd;
+	display: flex;
+	flex-direction: column; /* 세로로 요소 배치 */
+}
+
+.lose_area {
+	position: relative;
+	padding: 10px;
+	padding-bottom: 20px;
+	border: 1px red solid;
+	border-radius: 20px;
+	width: 45%;
+	margin: 10px;
+	background-color: #ffcece;
+	display: flex;
+	flex-direction: column; /* 세로로 요소 배치 */
+}
+
+/* 일자형 유저 정보 */
+#main_result .playinfo_main {
+	cursor: pointer;
+	z-index: 1000;
+	font-size: 12pt;
+	margin: auto;
+	margin-top: 2px;
+	margin-bottom: 18px;
+	width: 320px;
+	height: 40px;
+	background-color: white;
+	border-radius: 50px;
+	display: flex; /* 아이템을 중앙 정렬하기 위해 flex 컨테이너로 설정 */
+	justify-content: space-between;
+	align-items: center; /* 수직 중앙 정렬 */
+	padding-right: 15px;
+}
+
+#main_result .playinfo_main .charactename {
+	text-align: center;
+	height: 24px;
+	width: 150px;
+	background-color: #d8eb94;
+	border-radius: 50px;
+	display: flex; /* 아이템을 중앙 정렬하기 위해 flex 컨테이너로 설정 */
+	align-items: center; /* 수직 중앙 정렬 */
+}
+
+#main_result .playinfo_main .charactename img {
+	margin-right: 4px;
+	border: 5px solid white;
+	border-radius: 50px;
+}
+
+/* ---------------------------------------------------------------- */
+/*1인요약정보*/
+#warp_bot {
+	width: 900px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	font-size: 11pt;
+	margin-top: 10px;
+}
+
+.personal_div {
+/* 	width: 100%; */
+/* background-color:gray; */
+margin-right: 2px;
+margin-left: 2px;
+}
+
+.red_aa {
+	background-color: #ffcece;
+	width: 450px;
+	height: 220px;
+	margin-bottom: 5px;
+	padding: 12px;
+	border-radius: 20px;
+}
+
+.blue_aa {
+	background-color: #b7dcfd;
+	width: 450px;
+	height: 220px;
+	margin-bottom: 5px;
+	padding: 12px;
+	border-radius: 20px;
+}
+
+
+.personal_div a{
+	border:  1px black solid;
+	border-radius:20px;
+	padding: 0px 10px;
+	margin-bottom: 100px;
+}
+.personal_div img{
+margin-top: 5px;	
+}

@@ -1,0 +1,75 @@
+window.onload=function(){
+	var cat1_area = document.getElementById("cat1_area");
+	var cat2_area = document.getElementById("cat2_area");
+	var dog1_area = document.getElementById("dog1_area");
+					
+	var xhr = new XMLHttpRequest();				
+	var a = document.getElementById("cat1");				
+	a.addEventListener("click", function() {				
+		xhr.open('GET', '/api/catOne'); // HTTP 메서드와 요청 URL 설정. todo: 현 컨텍스트path에 맞춰 수정할 것			
+		xhr.send(); // 요청 보내기			
+		xhr.onload = function() {			
+			if (xhr.status === 200) { // 응답 상태 확인		
+				console.log(xhr.responseText); // 응답 데이터 출력	
+				alert(xhr.responseText);
+				var x = JSON.parse(xhr.responseText);
+				var v = "응가쟁이 : "+x.name+"싼 똥 : "+x.age;
+				cat1_area.innerHTML = xhr.responseText+"ㅎㅇ"+v;	
+			} else {		
+				console.error(xhr.statusText); // 오류 메시지 출력	
+			}		
+		};			
+	});				
+	var b = document.getElementById("cat2");				
+	b.addEventListener("click", function() {				
+		xhr.open('GET', '/api/catTwo'); // HTTP 메서드와 요청 URL 설정. todo: 현 컨텍스트path에 맞춰 수정할 것			
+		xhr.send(); // 요청 보내기			
+		xhr.onload = function() {			
+			if (xhr.status === 200) { // 응답 상태 확인		
+				var jo = JSON.parse(xhr.responseText);	
+				var s = "고양이름:"+jo.name+" 고양이나이:"+jo.age;	
+				alert(s);	
+				cat2_area.innerHTML = s;
+			} else {		
+				console.error(xhr.statusText); // 오류 메시지 출력	
+			}		
+		};			
+					
+	});	
+	
+	var c = document.getElementById("dog1");				
+	c.addEventListener("click", function() {				
+		xhr.open('GET', '/api/dogOne'); // HTTP 메서드와 요청 URL 설정. todo: 현 컨텍스트path에 맞춰 수정할 것			
+		xhr.send(); // 요청 보내기			
+		xhr.onload = function() {			
+			if (xhr.status === 200) { // 응답 상태 확인		
+				var dog = JSON.parse(xhr.responseText);	
+				var doghtml = "사실:"+dog.name+" 달마시안:"+dog.age;	
+				alert(doghtml);	
+				dog1_area.innerHTML = doghtml;
+			} else {		
+				console.error(xhr.statusText); // 오류 메시지 출력	
+			}		
+		};			
+					
+	});    
+
+	var box_0_img = document.getElementById("box_0_img");
+	var box0 = document.getElementById("box_0");				
+	box0.addEventListener("click", function() {				
+		xhr.open('GET', '/api/box0'); // HTTP 메서드와 요청 URL 설정. todo: 현 컨텍스트path에 맞춰 수정할 것			
+		xhr.send(); // 요청 보내기			
+		xhr.onload = function() {			
+			if (xhr.status === 200) { // 응답 상태 확인		
+				var box0 = JSON.parse(xhr.responseText);	
+				var box0html = "<img src='/resources/img/"+box0.name+"'>";	
+				alert(box0html);	
+				box_0_img.innerHTML = box0html+box0.name;
+			} else {		
+				console.error(xhr.statusText); // 오류 메시지 출력	
+			}		
+		};			
+					
+	});    
+					  
+}					

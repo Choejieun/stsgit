@@ -1,0 +1,24 @@
+.A {
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid black;
+    color: aquamarine;
+}
+
+table {
+    /* border: 1px solid black; */
+
+    border-width: 1px;
+    border-style: dashed; 
+    /* solid - 실선 sashed-점선 */
+    border-color: gold;
+    padding: 1px
+}
+
+tr,th,td{
+    border: 1px solid black;
+}
+
+a{
+    color: gray; text-underline-position: auto;
+}

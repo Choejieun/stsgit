@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#all{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.raro{
+    display: flex;
+    flex-flow: row;
+}
+#top {
+    width: 800px;
+    height: 300px;
+    background-color: aqua;
+}
+#r {
+    width: 400px;
+    height: 300px;
+    background-color: blueviolet;
+}
+#l {
+    width: 400px;
+    height: 300px;
+    background-color: pink;
+}
+#but {
+    width: 800px;
+    height: 300px;
+    background-color: darkblue;
+}
+#pp{
+    position: absolute;
+    justify-content: right;
+    align-items: start;
+    text-align: right;
+    
+    display: inline;
+    width: 400px;
+    height: 400px;
+    background-color: brown;
+}
+#butt{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 0px;
+    margin-top: 0px;
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;CSS&apos; to &apos;JspDaoDtoBoard&apos;&#x0D;&#x0A;- Original project: &apos;Q12.5_bbs_06s&apos;&#x0D;&#x0A;- Destination element: &apos;JspDaoDtoBoard&apos;&#x0D;&#x0A;- Original element: &apos;CSS&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move folder" destination="=JspDaoDtoBoard" element1="src/main/webapp/CSS" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1706773266624" units="0" version="1.0"/>
+</session>

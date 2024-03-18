@@ -1,0 +1,11 @@
+div#a {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(white, pink);
+}
+
+div#b {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right bottom, yellow, white);
+}

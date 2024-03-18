@@ -1,0 +1,19 @@
+#text_box{
+    width: 500px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+}
+#screen{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1fr 1fr 1fr;
+    height: 400px;
+}
+#img_p{
+}
+#vs{
+    width: 200px;    
+}
+#img_c{
+}

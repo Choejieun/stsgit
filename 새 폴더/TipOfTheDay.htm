@@ -1,0 +1,455 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>XYplorer - Tip of the day</title>
+<meta http-equiv="Content-Type"  content="text/html; charset=iso-8859-1">
+<style type="text/css"><!--
+*  {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 140%;
+}
+body  {
+  background-color: #ECE9D8; /* #F5F4EC;  */
+  margin: 0px 0px 10px 0px;
+  color: #333;
+}
+h1 {
+  font-family: trebuchet ms, arial;
+  font-size: 33px;
+  font-weight: bold;
+  padding: 8px;
+  margin: 0;
+  color: #fff;
+}
+#content {
+  background-color: #fff; 
+  padding: 8px;
+}
+div.sep {
+  background-color: #ECE9D8; 
+  padding: 0;
+  height: 4px;
+}
+p.footer {
+  font-size: 10px;
+  color: #808080;
+  margin: 4px 8px 0 0;
+  text-align: right;
+}
+acronym {
+  border-bottom: #aaa 1px dashed;
+  cursor: help;
+}
+span.code {
+  font-family: courier new;
+}
+div.code {
+  font-family: courier new;
+  white-space: pre;
+}
+div.attention {
+  background-color: #FFFFCC;
+  border: 4px dashed #FFFF00;
+  padding: 12px;
+  margin: 12px;
+}
+p {
+  margin: 2px 0 2px 0;
+}
+a.tip:link, a.tip:visited, a.tip:hover, a.tip:active {
+  color: #446EAB;
+  text-decoration: none; 
+}
+a.tip:hover {
+  text-decoration: underline; 
+}
+//--></style>
+</head>
+<body>
+<h1>DID YOU KNOW...</h1>
+<div id=content>
+<b>#title#</b><br><br>
+#text#
+</div>
+<p class=footer>#footer#</p>
+####
+<!-- Tip Data Section: will be removed from the HTML template -->
+<pre style="background-color:#fff;">
+<b>"Tips of The Day" for XYplorer</b>
+Copyright (c) 2007-10 Donald Lessau
+Created: 20070908
+Updated: 20100203
+
+<span style="font-family:courier new; color:#0077B0;"><b>File Format</b>
+There are "Tips" and "Terms". Tips are the tips proper, and Terms are used for explanatory tooltips. Their order below may be freely mixed.
+
+<b>Syntax for Tips</b>
+  first line:   Tip Title
+  next lines:   Tip Text: text text {:TermWithToolTip[|Target]} text {Link[|Target]} text ...
+    (currently unused:)
+    -           End of Tip Text, Start of Tip Properties
+    keyword 1, keyword 2, keyword 3 ...
+    [0/1/2]     Level: 0 (All), 1 (Beginner), 2 (Advanced)
+
+<b>Syntax for Terms</b>
+  :Term:Explanation
+
+<b>Section delimiters</b>  
+  ####       (1.) Start of Tip Data Section
+  ####       (2.) End of Tip Data Section
+  ###        Start of Tip Data
+  #          End of Tip/Term
+</span>
+
+###
+"Tips of the Day" by keyboard
+<div class=code>PageDown/Up = Next/Previous tip
+Home/End    = First/Last tip
+A           = All tips, titles only
+Shift+A     = All tips, with texts
+R           = Random tip</div>
+#
+How can I make XYplorer my default file manager?
+In other words, how to associate XY with folders, so that every time Windows Explorer would be opened by some process, now XYplorer will be opened instead? 
+It's simple, but it involves editing the registry, so take care. {Here|http://www.xyplorer.com/faq-topic.php?id=1} is the way.
+#
+How to quickly remove any filters
+Address Bar: When pressing Enter on an empty pattern {XYplorer|http://www.xyplorer.com} will browse the {:current location}, removing any current {:Visual Filters|Visual Filter} or {:Name Search} patterns.
+
+See also {Quick Name Search}, {How to set a Visual Filter}.
+#
+Quick Name Search
+You may enter search patterns directly into the Address Bar and the "Go to" boxes: Simply put "?" between location and pattern.
+
+Example: <span class=code>C:\WINDOWS\?*.log</span>
+Finds all LOG files in C:\WINDOWS\
+#
+How to set a Visual Filter
+Find the command "Set Visual Filter... (Ctrl+J)" in each tab header's {:context menu}.
+
+Example: Set the VF to *.txt to only show files with the {:extension} TXT in the file list.
+#
+Toggle search filters
+Find Files tabs: You can quickly enable/disable filters by right-clicking the tab headers, or by holding CTRL while left-clicking them.
+#
+Stop a search
+You can stop an ongoing search at any time by pressing ESC (or using the Stop button in the Toolbar).
+#
+Save As
+Press Ctrl+S (Copy Here As...) to quickly create a renamed copy of the focused {:item}.
+#
+Make a dated copy
+Press Ctrl+Shift+D to quickly create a copy of the focused {:item} with its {:Modified Date} appended to the original filename.
+#
+Show/Hide the Info Panel
+Left-click on the {:Statusbar} or press F12.
+#
+Size the Info Panel
+There's a 3 pixel high splitter between {:Info Panel} and {:Statusbar}. Grab it with the mouse and move it up/down.
+#
+New Items
+Read the Help about the fully portable and easily configurable <b>New Items</b> menu! It's a <b>Major time saver!</b>
+#
+Bring it back 
+Use Ctrl+T followed by Alt+Left to bring back any accidentally closed tab. 
+#
+Swap paths 
+Use F7 to swap between two recently used paths. 
+#
+Two ways of switching tabs
+1. Use Ctrl+Tab (Ctrl+Shift+Tab) to go to next (previous) tab. 
+2. Point mouse on any tab and use mouse-wheel switch tabs. 
+#
+Favorite folders
+Right-click on empty space of Tree to see your favorite folders in a popup menu.
+
+For a much more powerful approach to favorite folders and files check out the {Catalog}.
+#
+Catalog
+A configurable and multi-functional favorites pane (Ctrl+F8) right below the Tree. The Catalog is an extremely powerful interface element that you should by all means try out in case you have not done so already! Consult the Help file for more information.
+#
+Customize keyboard shortcuts
+Use Shift+F9 to customize your shortcut keys. 
+#
+Add/remove Toolbar icons
+In the Customize Toolbar dialog: Simply double-click the icons. 
+#
+Customize the Toolbar
+Use Ctr+Shift+F9 to customize the toolbar, i.e. decide which buttons are shown in what order.
+#
+Color the files
+Tools/Configuration/Color Filters: Color your music files (e.g. mp3, ogg), work files (e.g. doc, ppt) or family pics (e.g. jpg, png) for easy location.
+#
+Too many confusing files around? 
+Select any file extension(s) in the List and press Ctrl+Alt+J to see only those file extensions. Use Ctrl+Shift+J to go back to normal.
+#
+Quick selection
+Use Ctrl+Alt+M on any file extension(s) and only those will get selected. 
+#
+Most Toolbar buttons have context menu
+Right-clicking on most of the toolbar icons pops up context-specific options. 
+#
+Breadcrumbs 
+Right-click on the tab header icon to get {:breadcrumb}s, or use Ctrl+Backspace.
+#
+Marking/Coloring the tree 
+Right-click on any tree item and use "Mark" to highlight those items in various ways. 
+#
+Default tab
+If you work with {:locked tabs} it is highly recommended to set one <i>unlocked</i> tab as "Default tab", in order to reduce the number of automatically opened tabs.
+#
+Tab with a Home
+The idea of setting a Home for a tab is to be able to easily "Go Home" (Alt+Home), and so restoring the tab's {:mode|list modes}, location, columns order and sort order in one click.
+#
+Tab locked to a Home Zone
+When you have a Home set for a tab, you can lock a tab to its Home Zone. What this means is, instead of being locked to a single location, the tab will be locked to its Home path and all its subfolders.
+#
+Avoid auto-scrolling
+When dragging items out of the List, take the "right route", i.e. leave the list via its right part. Then it won't auto-scroll when you approach the margins.
+#
+Open a new tab
+There are many ways:
+- Menu View | Current Tab | Open New Tab (Ctrl+T).
+- Right-click a tab header: Open New Tab.
+- Dbl-click the grey space on the Tab bar.
+- Hold SHIFT while opening a folder.
+- There is also a toolbar button "New Tab".
+#
+Open folder in new tab
+Almost everywhere in XYplorer, holding SHIFT while opening a folder will open it in a new foreground tab.
+#
+Quick image preview (full screen)
+Hit F11 to quickly preview an image file full screen.
+
+To show the filename and image size: Check Configuration | Preview | Full Screen Preview | Show Filename
+#
+Increase font
+Hold control and scroll mouse to increase/decrease font size.
+#
+Move tabs
+Point mouse over any tab and Shift+Scroll to move it.
+#
+Sorting the list, #1
+Sort columns by clicking on the column headers. Reverse sort order by clicking again. 
+#
+Sorting the list, #2
+Right-click the # column (Line Numbers) to get sort options. Handy if you want to sort by any column that is turned OFF.
+#
+Sorting the list, #3
+Hold the CTRL key while clicking a column header to keep the focused item in view.
+Or check "Keep focused item in view after sorting" (in Configuration | Advanced) to achieve the same without holding CTRL.
+#
+Autosize columns
+Dbl-click the # column (Line Numbers).
+#
+Statusbar text
+Double-click on any {:statusbar} text to copy it to clipboard. 
+#
+Properties tab
+Double-click to copy any value or icon in {:Info Panel}'s Properties tab.
+#
+Size the Name column by keys
+<div class=code>  "Grow Name Column"    (Ctrl+Shift+Numpad Add)
+  "Shrink Name Column"  (Ctrl+Shift+Numpad Subtract)</div>
+Works in Details, List, and Small Icons view!
+#
+Row heights
+Use the mouse wheel to quickly change the row heights in for Tree, {:Catalog}, and List.
+- Ctrl+Shift+MouseWheel Down: increase row height
+- Ctrl+Shift+MouseWheel Up:   decrease row height
+The {:Statusbar} provides you with the necessary feedback.
+#
+:Locked Tabs:... always stay at the location they were at when being locked (Ctrl+L).
+#
+:Breadcrumb:Interface element that allows to move quickly up and down the current path.
+#
+:Modified Date:The date a file or folder was last modified.
+#
+:Item:A file or folder.
+#
+:Statusbar:The information bar right below the file list.
+#
+:Catalog:A configurable and multi-functional favorites pane (Ctrl+F8) right below the Tree. The Catalog is an extremely powerful interface element that you should by all means try out in case you have not done so already! Consult the Help file for more information.
+#
+:Info Panel:The tabbed information pane (F12) right below the Statusbar.
+#
+:Current Location:The location where the Tree is currently pointing to. Also displayed in the window title bar.
+#
+:Context Menu:Pops up when you right-click an item.
+#
+:Visual Filter:A wildcard pattern like *.txt that filters the List contents.
+#
+:Name Search:A search triggered via the Address Bar using the "?"-operator.
+#
+:Tree:The Tree View of folders, top left pane of the main window.
+#
+:Context Menu:Pops up when you right-click an item.
+#
+:Extension:The part of a filename after the last dot, e.g. txt.
+#
+:List Modes:The list knows four modes: Browse, Find (Search Results), Drives, and Network.
+#
+Mouse Down Blow Up
+Click and hold on thumbnails to see images blown up to original size. 
+Right-Click for a sticky blow up.
+#
+List modes
+The file list knows four modes: Browse, Find (Search Results), Drives, and Network mode. They are distinguished by the columns they feature.
+Tip: You can color each mode separately in Tools | Configuration | Interface Colors.
+#
+Speed-up browsing (1)
+Uncheck these options in Configuration (F9) for faster browsing:
+"Show icon overlays", "Show folder sizes in file list", "Check existence of subfolders in tree" and "Check subfolders for tree nodes".
+#
+Speed-up browsing (2)
+Check these options in Configuration (F9) for faster browsing:
+"Cache specific icons", "Use generic icons for super-fast browsing" and "Super-fast thumbnail creation".
+#
+Label tab headers
+You can rename the tab headers to your liking. Simply right-click and "Rename tab...".
+#
+How old are your files?
+Enable "Show Age" (Ctrl+Alt+E) to see how old your files are.
+#
+One-click start your favorite programs
+Place your favorite applications (the EXE-files) inside the {:Catalog} and set "Action on click" in the items' Properties to "Open Item".
+Command line parameters are allowed if you put the application in quotes.
+#
+Select a Catalog Item
+To select a {:Catalog} Item by mouse without triggering an action, click the item within the leftmost 8 pixel wide area. Or, hold ALT while clicking the item.
+#
+Drag & drop context menu
+Drag & drop using the right button to get a menu with lot of useful options.
+#
+Add/remove columns in file list
+Right-click the "Name" column to quickly add or remove columns. 
+#
+Browse the back pane (Dual Pane)
+Use Alt+Click in the Tree to browse a folder in the background pane.
+#
+A clean and organized history
+Use the Hotlist (Ctrl+H) to see your recent folders organized by drives and alphabetically.
+#
+Easily duplicate a Catalog item
+Hold the CTRL key while dragging the {:Catalog} item within the same or to another {:Category}.
+#
+:Category:The Catalog is organized into Categories which contain Catalog Items.
+#
+Easily duplicate items
+Drag & drop an item (or more items) while holding the CTRL key.
+#
+Easily create shortcuts
+Drag & drop an item (or more items) while holding the ALT key. A shortcut file (*.LNK) will be created in the drop location (Tree, {:Catalog}, or List).
+#
+Move up one level
+Open the Move To dialog (Shift+F7) and enter ..\ as destination. This will move the selected item(s) up one level.
+#
+Hide folders in list
+Press Ctrl+Shift+O to have only files displayed in the List. Press it again to re-show the folders.
+#
+Slow double-click 
+Use slow double-click (click on an already selected item) in Tree, List, and {:Catalog} to quickly rename an item.
+
+If you don't like it, you can turn it off in menu View | Tree/List Style | Rename On Slow Double-Click.
+#
+Len column
+Select menu View | Columns | Len to show the length in characters of all items directly in the List.
+#
+Replicate tree structure
+To replicate a tree structure without its files, right-drag a folder to a new location and select "Create Branche(s) Here" from the drop context menu.
+#
+New Items with Date Variables
+Example:
+(1) Create a file "Log &#123;yyyy-mm-dd&#125;.txt" in the NewItems folder in app path.
+(2) A file called "Log 2007-09-17.txt" will be created in the current folder on clicking the item in the NewItems menu (if today is 2007-09-17).
+#
+Preview sounds and movies: Click the bar!
+While viewing audio or video files on the Preview tab you can on-the-fly change the play position by right-clicking the progress bar.
+Toggle Pause/Play by left-clicking the progress bar. Back to start by Shift+Click.
+#
+Skip previewing certain files types
+You can excluded file types from being previewed in Configuration | Previewed Formats.
+#
+Accelerators in User-Defined Commands
+In the Caption, just put the "&amp;"-character in front of the letter you want to accelerate. For example: "My C&amp;aption" would be triggered by pressing "a" when the menu is visible.
+#
+Dropping text
+You can drop text from any application that allows you to drag text onto the Tree or List, for example from a website. XYplorer will then automatically create a new text file named e.g. "DroppedText-20071020.txt" (auto-dated).
+#
+Image preview
+Zoom/Unzoom small images by clicking on the preview holding CTRL.
+#
+Serial rename by Tab key
+If you're renaming a single file in a folder full of files, you can tap the TAB key when you're done (instead of ENTER). When you do so, you'll begin renaming the next file in the folder. Hit TAB repeatedly to jump through all the files in the current folder. Hit Shift+TAB to move backwards.
+#
+Make your own Keyboard Shortcuts cheat sheet, #1
+In the Customize Keyboard Shortcuts dialog (Shift+F9) you find a menu called Options with a submenu "Copy Cheat-Sheet".
+#
+Make your own Keyboard Shortcuts cheat sheet, #2
+The Commands listing in the Customize Keyboard Shortcuts dialog has a context menu... try it! It even allows you to directly trigger a command from here.
+#
+Input a search date (Find Files tab)
+You can quickly browse through dates by pressing the up/down arrow keys after focusing the date fields. Hold SHIFT to scroll through the months.
+#
+Preview fonts, #1
+The Preview tab on the {:Info Panel} can as well preview all sorts of font files, whether they are installed or not. You can as well enter a test text, which is displayed in various sizes.
+#
+Preview fonts, #2
+You can activate a previewed font that is not installed by simply clicking on its underlined name in the info section on the preview tab. The activated font will be usable as if it was installed by all applications for the duration of this Windows session.
+#
+Print the contents of a folder
+Open the Report tab on the {:Info Panel} and choose between various output styles and media.
+To have better control over the print layout, it is recommended to send the data to the clipboard first, and then paste them into some text processor.
+#
+Move or Copy Catalog Items
+To move a {:Catalog} Item simply drag the item to a new position. The new position can be in the same or in a different Category. 
+Holding CTRL will create a copy of the item in the new position.
+#
+Drop on Tabs
+You can drag'n'drop items directly on the tab headers.
+Hold SHIFT to force a Move, hold CTRL to force a Copy.
+The hovered tab will open after a configurable time (see Configuration | Tabs).
+#
+How to search for "["
+(1) Enclose them in [ and ]. For example, this standard search pattern will match the file "Info[23].txt": <b>Info[[]##].txt</b>
+(2) Or, escape it with \: <b>Info\[##].txt</b>
+#
+Append an item's modified date to its name
+Do a Batch Rename (Shift+F2) with this pattern:
+<b>*-&lt;myyyymmdd&gt;</b>
+#
+Move Tabs
+You can drag tabs to a new position.
+#
+Bypass XY's Portable File Associations
+Hold CTRL while double-clicking an item to force opening the item with the OS associated application.
+#
+Quickly edit User-Defined Commands
+Hold CTRL while you click the menu item pointing to the command you want to edit. This will open the command's properties dialog instead of triggering the command.
+#
+Change Size format
+Right-click the Size column to quickly change the display format for file sizes.
+#
+Change Date format
+Right-click the Modified/Created/Accessed column to quickly change the display format for file dates.
+#
+Set View for All Tabs
+Hold the SHIFT key while selecting a view (Details, Small Icons, etc) to set it for all tabs at once.
+#
+Size filter accepts fractional values
+The Find Files Size filter accepts values like 0.5 MB.
+#
+Search All Tabs
+The "..." (Browse) button has a tiny context menu with one command "Search All Tabs". Click it to enter the paths of all tabs in the Find Files Location field. Search Results tabs are excluded.
+#
+Secondary Sorting
+Simply hold Shift while you click on a column header to sub-sort the file list by this column.
+#
+Paste text from clipboard as file
+You can turn text data from clipboard directly into a new text file. Simply use Edit | Paste Special | Paste Text Into New File [Ctrl+Alt+V].
+#
+Paste image data from clipboard as file
+You can turn image data from clipboard directly into a new image file. Simply use Edit | Paste Special | Paste Image Into New File [Ctrl+Shift+Alt+V].
+</pre>
+####
+</body>
+</html>

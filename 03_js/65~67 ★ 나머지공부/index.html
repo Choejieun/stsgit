@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>lottoV0.2.0</title>    
+    <script src="common.js"> </script>
+    <script src="character.js"> </script>
+    <script src="room.js"> </script>
+    <script src="functions.js"> </script>
+    <script src="monster.js"> </script>
+    <script src="main.js"> </script>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <!-- [v0.20.0 업데이트 내용]
+    - 오브젝트 창의 orc 간략 정보 출력을 주석처리
+    - 몬스터 클래스에 배치위치 변수 추가. 초기값 0
+    - 몬스터들을 (허수아비4,쥐2) 객체 생성하고  monsterArray 배열에 넣음
+    - 몬스터 생성 시 생성자의 location 값에 각 방의 id를 넣어 해당 방에 위치시킴
+    - 몬스터 클래스에 getInfo 를 추가하고 간략 정보를 문자열로 리턴하는 함수로 함
+    - 몬스터 하나 추가(왕쥐, 위치 = 연습장 지하)
+    - 현재 방의 몬스터들을 출력 처리
+    - 각방 이동이 잘 되는지 확인
+    - 각방마다 존재하는 몬스터들이 게임 오브젝트 창에 잘 표시되는지 확인 -->
+
+    <div id="all">
+        <div id="left" >
+            <div id="character_img">
+                <img id="img" src="img_mein.png" width="100%">
+            </div>
+            <div id="inputtextdiv">
+                <input type="button" id="turn" value="다음" onclick="turngo()">
+                <div class="div_sero">
+                    <input type="button" id="move_up" value="위" onclick="move('위')">
+                <div class="div_garo">
+                <input type="button" id="move_n" value="북" onclick="move('북')">
+                <input type="button" id="move_w" value="◀" onclick="move('서')">
+                <input type="button" id="move_e" value="▶" onclick="move('동')">
+                <input type="button" id="move_s" value="남" onclick="move('남')">
+            </div>
+            <input type="button" id="move_do" value="아래" onclick="move('아래')">        
+        </div>
+                <input type="text" id="turn_number" value="1" >
+            </div>
+            <textarea id ="gameobject"></textarea>
+            <textarea id="screenPlayerInfo"></textarea>
+        </div>        
+        <textarea id="main_textarea"  placeholder="메인 텍스트 창"></textarea>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;com.0.0.2.Project.webChat.mango&apos;" deleteContents="false" description="Delete resource &apos;com.0.0.2.Project.webChat.mango&apos;" element1="/com.0.0.2.Project.webChat.mango" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1709769512973"/>&#x0A;<refactoring comment="Delete resource &apos;com.0.0.9Project.webChat.mango&apos;" deleteContents="false" description="Delete resource &apos;com.0.0.9Project.webChat.mango&apos;" element1="/com.0.0.9Project.webChat.mango" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1709791555131"/>
+</session>

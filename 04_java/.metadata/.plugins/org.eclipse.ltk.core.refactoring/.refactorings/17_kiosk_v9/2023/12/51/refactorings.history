@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Cw.java&apos; to &apos;17_kiosk_v9/src/Cw&apos;&#x0D;&#x0A;- Original project: &apos;17_kiosk_v9&apos;&#x0D;&#x0A;- Destination element: &apos;17_kiosk_v9/src/Cw&apos;&#x0D;&#x0A;- Original element: &apos;Kiosk.Cw.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;Cw" element1="/src&lt;Kiosk{Cw.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1702884409038" units="1" version="1.0"/>
+</session>

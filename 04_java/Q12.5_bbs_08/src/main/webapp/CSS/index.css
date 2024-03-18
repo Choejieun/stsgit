@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body {
+	background-color: #ffffff;
+	margin: auto;
+	font-family: 'NanumGothic', sans-serif;
+}
+
+#warp {
+	width: 60%;
+	margin: auto;
+	background-color: black;
+}

@@ -1,0 +1,29 @@
+body {margin:  auto;
+
+}
+
+    #main {margin: auto;
+        margin-top: 50px;
+        display : flex;
+        flex-direction: column; /* 세로 정렬을 위해 컨테이너의 방향을 세로로 설정합니다. */
+        align-items: center;
+        justify-content: center;
+     }
+
+#story_box {
+    width: 500px;
+    height: 200px;
+    resize: none;
+    color: beige;
+    color: black;
+    text-align: center;
+    padding: 30px;
+    line-height: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+};
+
+#midbutton {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}

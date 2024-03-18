@@ -1,0 +1,22 @@
+package com.peisia.controller;
+
+import java.nio.charset.StandardCharsets;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@RequestMapping("/hihi/*")
+@Controller					
+public class MyController {					
+	@GetMapping("/getData")				
+	@ResponseBody				
+	public String getData() {				
+		// 데이터를 생성하거나 가져옴			
+        String originalString = "<p>마법소녀 변신!!!!!!!!!!!</p>";
+        byte[] utf8Bytes = originalString.getBytes(StandardCharsets.UTF_8);
+        String data = new String(utf8Bytes, StandardCharsets.UTF_8);
+        return data;	
+	}				
+}					

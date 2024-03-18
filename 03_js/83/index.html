@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>lottoV0.2.0</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="common.js"> </script>
+    <script src="main.js"> </script>
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+    <form>
+        숫자만 입력
+        <input type="text" placeholder="가나다" pattern="^[0-9]+$">
+        <input type="submit" value="가나다" placeholder="가나다">
+    </form>
+    <form>
+        영문 대소문자만
+        <input type="text" placeholder="가나다" pattern="^[A-Za-z]+$">
+        <input type="submit" value="가나다" placeholder="가나다">
+    </form>
+    <form>
+        영문 대소문자만(띄어쓰기 공백 가능)
+        <input type="text" placeholder="가나다" pattern="^[A-Za-z\s]+$">
+        <input type="submit" value="가나다" placeholder="가나다">
+    </form>
+    <form>
+    숫자, 영문 대소문자만
+        <input type="text" placeholder="가나다" pattern="^[\dA-Za-z]+$">
+        <input type="submit" value="가나다" placeholder="가나다">
+    </form>
+    <form>
+    "최소 8자리에서 최대 16자리까지 숫자, 영문, 특수문자 각 1개 이상 포함 (암호 유효성 검사에 유용)"
+        <input type="text" placeholder="가나다" pattern="^(?=.*[A-Za-z])(?=.*[\d])(?=.*[$@$!#%^&*])[A-Za-z\d$@$!#%^&*]{8,16}$">
+        <input type="submit" value="가나다" placeholder="가나다">
+    </form>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+#all {
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    border: solid palevioletred 1px;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 5px 5px 8px rgb(0, 0, 0,0.4);
+
+    display: flex;
+    justify-content: center; /*가로*/
+    align-items: center; /*세로*/
+    /* 부모를 기준으로(flex) 중앙으로 정렬하겠다. */
+}
+
+#hi {
+    width: 300px;
+    height: 50px;
+    background-color: palevioletred;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* 부모 아이디 bg */
+#box{
+    width: 100%;
+    height: 100vh; 
+    /* 보고있느 화면 기준 100 으로 잡겠다 */
+    /* background: linear-gradient(to right,gold,pink); */
+    background: linear-gradient(-145deg,gold,pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#time_c{
+    width: 400px;
+    height: 50px;
+    border-radius: 500px;
+    border: 1px palevioletred solid;
+
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+
+.sero{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.garo{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}

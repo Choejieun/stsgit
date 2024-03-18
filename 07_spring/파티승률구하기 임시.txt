@@ -1,0 +1,46 @@
+파티 승률 구하기<br>
+<%int i = 0; %>
+<%int k = 0; %>
+<script type="text/javascript">
+						var array = []; // 값을 저장할 배열
+						var arrayM = []; // 각 닉네임에 대한 정보를 저장할 배열
+// 				        document.write("＠" + array+'/'+array.length+ '<br>');
+</script>
+<c:forEach var="Matches" items="${PartyInfoArray}">
+<c:if test="${not empty Matches.playInfo.partyInfo}"> <!-- 파티or솔로 검사 -->
+<c:if test="${Matches.playInfo.result eq 'lose'}"> <!-- 패배 -->
+	 		<c:forEach var="partInfo" items="${Matches.playInfo.partyInfo}"> <!-- 파티원 찾기 -->
+<%-- 				${partInfo.nickname};  <!-- 파티원--> --%>
+						<script type="text/javascript">
+			            var nickname = "${partInfo.nickname}";
+						
+				        // 배열에 동일한 닉네임이 있는지 확인하고, 없으면 배열에 추가
+			            if (array.includes(nickname)) {
+			                // 배열에서 동일한 닉네임의 인덱스 확인
+			                var index = array.indexOf(nickname);
+			                arrayM[array.indexOf(nickname)] = arrayM[array.indexOf(nickname)]+1; // 해당 닉네임의 정보를 저장하는 배열에 1 추가
+			                document.write('함께한 패배 수 :: '+arrayM[array.indexOf(nickname)]+ '<br>');
+			                document.write("＠" + nickname + '/ 현재 생성된 배열 수 : ' + array.length + '<br>');
+			                document.write("★얘는 "+ (index + 1) + ' 번째 인덱스임<br><br>');
+			            }else {
+			            	//배열에 동일한 게 없어서 추가
+			                array.push(nickname);
+			                document.write('몇번쨰? :: '+(array.indexOf(nickname)+1)+ '<br>');
+			                arrayM[array.indexOf(nickname)] = 1; // 해당 닉네임의 정보를 저장하는 배열 생성
+			        		document.write("속성값 " + array[array.indexOf(nickname)]+'<br>');
+			        		document.write("전체 값 " + array+'<br>');
+			        		document.write("추가 :: " + nickname+'/'+array.length+'<br><br>');
+						}
+						</script>
+					</c:forEach><!-- 파티원 찾기 -->
+ 				<%i= i+1;	%>
+				[[[[[[[[[[[[<%=i %>패배]]]]]]]]]]]]<br>
+  </c:if><!-- 패배 -->
+  <hr>
+   <c:if test="${Matches.playInfo.result ne 'lose'}"><!-- 승리 -->
+	 		<c:forEach var="partInfo" items="${Matches.playInfo.partyInfo}"> <!-- 파티원 찾기 -->
+			</c:forEach>
+  </c:if><!-- 승리 -->
+  
+</c:if>  <!-- 파티or솔로 검사 -->
+ </c:forEach>

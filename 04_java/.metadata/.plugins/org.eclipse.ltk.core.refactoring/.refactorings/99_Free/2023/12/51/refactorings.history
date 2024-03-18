@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Today_12_15.sus&apos; to &apos;Sus&apos;&#x0D;&#x0A;- Original project: &apos;99_Free&apos;&#x0D;&#x0A;- Original element: &apos;Today_12_15.sus&apos;&#x0D;&#x0A;- Renamed element: &apos;Today_12_15.Sus&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;sus&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Today_12_15{sus.java[sus" matchStrategy="1" name="Sus" qualified="false" references="true" similarDeclarations="false" stamp="1702878880879" textual="false" version="1.0"/>
+</session>

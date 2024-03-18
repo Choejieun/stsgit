@@ -1,0 +1,10 @@
+tr,td,th {
+    border: solid 1px black;
+    
+}
+
+img{
+    width: 100px;
+    height: 40px;
+}
+

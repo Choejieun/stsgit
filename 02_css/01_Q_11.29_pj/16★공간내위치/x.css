@@ -1,0 +1,59 @@
+#box {
+    display: flex;
+    /* flex-direction: row;     */
+    flex-direction: column;
+    /* flex를 할건데, row(가로) column(세로)할 것인지 정의 */
+
+    /* justify-content: center; */
+    
+    align-items: center;
+    /* align-items: end; */
+    /* align-items: start; */
+    /* 비율비 중 위치 선정 */
+
+    width: 100px;
+    height: 1000px;
+
+    background-color: mediumseagreen;
+}
+
+.ma {margin: 10px;}
+
+#a{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    flex-basis: 5%;
+    
+}
+
+#b{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    flex-basis: 40%;
+    
+}
+
+#c{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    flex-basis: 30%;
+    
+}
+
+#d{
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+    flex-basis: 20%;
+    
+}
+#e{
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+    flex-basis: 10%;
+    
+}

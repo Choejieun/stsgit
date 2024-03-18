@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+body {
+	padding: 50px;
+	margin: auto;
+	background-color: #8bc34a;
+	color: black;
+	font-family: "나눔 고딕", sans-serif;
+	line-height: 35px;
+}
+
+/* id가 1개 클래스가 여러개 */
+#main {
+	margin: auto;
+	margin-bottom:15px;
+	padding: 20px;
+	border: solid 1px black;
+	border-radius: 6px;
+	width: 740px;
+	background-color: #8bc34a;
+}
+
+#wrap {
+	width: 1340px;
+	margin: auto;
+}
+
+div {
+	display: block;
+}
+
+#bbs_title {
+	background-color: white;
+	display: flex; /*부모 단계에서 사용하는 */
+	flex-direction: row; /*flex 가로로 표시*/
+	justify-content: space-between; /*flex 하위를 양쪽 정렬*/
+	font-size: 9pt;
+	font-family: "굴림체", sans-serif;
+	margin-bottom: 8px;
+	box-shadow: inset 2px -5px 10px -5px black; /*이너 그림자*/
+	padding: 5px;
+}
+
+#bbs_list {
+	background-color: white;
+	display: flex; /*부모 단계에서 사용하는 */
+	/* 	flex-direction: row; flex 기본값 */
+	justify-content: space-between; /*flex 하위를 양쪽 정렬*/
+	box-shadow: inset 2px -5px 10px -5px black; /*이너 그림자*/
+	padding: 5px;
+	margin-bottom: 3px;
+}
+
+.bbs_text {
+	background-color: white;
+	box-shadow: inset 2px -5px 10px -5px black; /*이너 그림자*/
+	padding: 30px;
+	padding-top: 15px;
+}
+
+.title {
+	/* 		background-color:white; */
+	text-align: left;
+}
+
+.id {
+	/* 		background-color:white; */
+	text-align: right;
+	width: 100px;
+	right: 0px;
+	color: olive;
+	border-left: solid 1px olive;
+}
+
+#bbs_write {
+	background-color: white;
+	box-shadow: inset 2px -5px 10px -5px black; /*이너 그림자*/
+	display: flex; /*부모 단계에서 사용하는 */
+	height: 28px;
+	margin-bottom: 5px;
+}
+
+.bbs_write_title {
+	width: 100px;
+	text-align: center;
+	height: 12pt;
+	margin-bottom: 15px;
+	line-height: 15px;
+	padding: 5px;
+}
+.custom-width {
+	width: 640px;
+}
+#bbs_submit{
+    margin: 0 auto;
+    text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	text-decoration: none;
+	color: olive;
+}
+
+
+
+
+/* 하단 */
+#bbs_but {
+	display: flex; /*부모 단계에서 사용하는 */
+	justify-content: space-between; /*flex 하위를 양쪽 정렬*/
+	padding: 5px;
+	margin-bottom: 3px;
+}
+#bbs_Right_align { /*오른쪽 정렬 모음용*/
+	display: flex; /*부모 단계에서 사용하는 */
+	flex-flow:row;
+	justify-content:flex-end;
+	padding: 5px;
+	margin-bottom: 3px;
+}
+
+
+.a_boutton{
+	background-color: white;
+	box-shadow: inset 2px -5px 10px -5px black; /*이너 그림자*/
+	text-align: center;
+	width: 100px;
+	right: 0px;
+	border-left: solid 1px olive;
+}
+
+
+
+

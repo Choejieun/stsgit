@@ -1,0 +1,148 @@
+body {background-color: black;}
+
+#x {
+    display: flex;
+    /* 가로or세로 축으로 일렬 이동, 부모역할 */
+    height: 100px;
+
+    /* 세로(높이) 정보는 부모 태그에서 끝남 */
+}
+#logo {
+
+    background-color: red;
+    width: 100px;
+
+}
+
+#banner-top {
+
+    background-color: rgb(255, 174, 0);
+    width: 600px;
+
+}
+
+
+/* 구분 */
+
+#tool{
+    height: 30px;
+    width: 700px;
+    background-color: aliceblue;
+}
+
+/* 구분 */
+
+#mid {
+    display: flex;
+    /* 가로or세로 축으로 일렬 이동, 부모역할 */
+        background-color: burlywood;
+        width: 700px;
+       
+
+    /* 세로(높이) 정보는 부모 태그에서 끝남 */
+}
+
+/* 구분 */
+
+#mid2 {
+        /* 가로or세로 축으로 일렬 이동, 부모역할 */
+   height: 160px;
+   margin: 5px;
+   
+
+   background-color: aliceblue;
+
+    /* 세로(높이) 정보는 부모 태그에서 끝남 */
+}
+
+
+#login {
+    width: 100px;
+    height: 150px;
+    background-color: aqua;
+    
+}
+
+#Category-h {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(81, 255, 0);
+    
+    
+}
+#Category-d {
+    width: 100px;
+    height: 200px;
+    background-color: rgb(0, 125, 125);
+    
+}
+
+
+#banner_home {
+    display: flex;
+    /* 가로or세로 축으로 일렬 이동, 부모역할 */
+   height: 160px;
+   margin: 5px;
+   
+
+   background-color: aliceblue;
+
+    /* 세로(높이) 정보는 부모 태그에서 끝남 */
+}
+
+#banner {
+    background-color: brown;
+    width: 185px;
+    margin: 5px;
+
+    /* 세로(높이) 정보는 부모 태그에서 끝남 */
+}
+
+#s {
+    width: 590px;
+    height: 700px;
+        background-color: rgb(255, 0, 0);
+
+    
+}
+
+#pu {
+    display: flex;
+    /* 가로or세로 축으로 일렬 이동, 부모역할 */
+    height: 100px;
+
+    /* 세로(높이) 정보는 부모 태그에서 끝남 */
+}
+
+#end {
+
+    width: 150px;
+    height: 1030px;
+    background-color: blue;
+
+}
+
+#all {
+width: 850px;
+    display: flex;
+    background-color: aqua;
+   
+}
+
+#allall {
+    background-position: center top;
+}
+
+/* 가로세로 축 조절 */
+/* display: flex; */
+
+
+/* 위치지정 */
+/* position: static; top: 0px; left: 0px; */
+
+/* 
+static	문서의 흐름에 맞춰 배치. 기본값(default) 임.	
+relative	static 과 달리 위치값 지정이 가능함.	
+absolute	원하는 위치를 지정해 배치	
+fixed	지정한 위치에 고정해 배치. 스크롤해도 그대로 남음.	
+ */

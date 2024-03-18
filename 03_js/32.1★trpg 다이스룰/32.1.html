@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>    
+    <link rel="stylesheet" href="main.css">
+    <script src="common.js"> </script>
+    <script src="main.js"> </script>
+    <link rel="stylesheet" href="main.css">
+
+
+</head>
+<body>
+
+    <!-- <input id="text_box" type="text" placeholder="도약, 근접전, 심리학 입력"> -->
+
+    <label for="text_box">행동 선택:</label>
+    <select id="text_box">
+        <option value="도약">도약</option>
+        <option value="근접전">근접전</option>
+        <option value="심리학">심리학</option>
+    </select>
+
+    <input id="dise_box" type="number" max="100" placeholder="능력치 입력" value="25";>
+    <input id="start_box" type="button"  value="렛츠 다이스" onclick="start();">
+    <br><br>
+    <textarea id="a_box" placeholder="결과화면"></textarea> <br>
+    <textarea id="story_box" placeholder="이야기">추운 겨울이 왔다.</textarea>
+
+    
+
+        <!-- 결과 화면(이미지) -->
+        <div id="screen">
+            <div id="my_card"></div>
+            <div id="rpc_vs"></div>
+            <div id="you_card"></div>
+        </div>
+    
+
+</body>    
+</html>

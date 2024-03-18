@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;Q12.5_bbs_03s/src/main/java/com.peisia.util&apos;&#x0D;&#x0A;- Original project: &apos;99_RPG_0.0.7&apos;&#x0D;&#x0A;- Destination element: &apos;Q12.5_bbs_03s/src/main/java/com.peisia.util&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     uitn.Cw.java&#x0D;&#x0A;     uitn.InputS.java&#x0D;&#x0A;     uitn.Material.java&#x0D;&#x0A;     uitn.Color.java" description="Copy compilation units" destination="=Q12.5_bbs_03s/src\/main\/java&lt;com.peisia.util" element1="/src&lt;uitn{Cw.java" element2="/src&lt;uitn{InputS.java" element3="/src&lt;uitn{Material.java" element4="/src&lt;uitn{Color.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1705991736019" units="4" version="1.0"/>
+</session>

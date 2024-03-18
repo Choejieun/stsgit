@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>lottoV0.2.0</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="common.js"> </script>
+    <script src="main.js"> </script>
+    <script src="reg_member.js"> </script>
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <!-- 
+<input class="ip" type="text" id="id" minlength="4" maxlength="12" 
+required placeholder="(6자리이상,12자리이하)"> -->
+    <form action="가나다">
+        <fieldset>
+            <legend>아이디</legend>
+            아이디 : <input id="get_id" type="text" placeholder="4~12자리 ID" required minlength="4" maxlength="12">
+            <br>
+            암호 : <input id="get_pw" type="password" placeholder="6~12자리 PW" minlength="6" maxlength="12" required>
+            <br>
+            암호 재입력 : <input id="get_pw_ck" type="password" placeholder="암호 재입력" minlength="6" maxlength="12" required>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>개인 정보</legend>
+            이름 : <input id="get_name" type="text" placeholder="이름" required minlength="2" maxlength="12">
+            <br>
+            이메일 : <input id="get_email" type="email" placeholder="이메일" required minlength="4" maxlength="25">
+            <br>
+            생년월일 : 
+            <input id="get_bth_yyyy" type="number" placeholder="yyyy" minlength="4" maxlength="4" required>
+            <select id="get_bth_m" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select id="get_bth_d" required>
+                <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+            </select>
+            <br>
+            <b>성별</b><br>
+            <input type="radio" name="sex" value="M">남성
+            <input type="radio" name="sex" value="G" checked>여성
+            <br>
+            전화번호
+            <input id="get_hp_010" type="text" value="010" required minlength="3" maxlength="3" >-
+            <input id="get_hp_mid" type="text" required maxlength="4" minlength="4">-
+            <input id="get_hp_but" type="text" required maxlength="4"  minlength="4">
+        </fieldset> 
+        <button type="reset" value="지우기">지우기</button>
+        <input id="get_sigup_submit" type="submit" value="회원가입" onclick="check()">
+        <!-- <input id="submit" type="submit" value="회원가입" onclick="check();"> -->
+
+    </form>
+
+</body>
+
+</html>

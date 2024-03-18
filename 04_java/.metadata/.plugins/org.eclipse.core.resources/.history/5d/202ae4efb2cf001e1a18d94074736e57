@@ -1,0 +1,19 @@
+package com.peisia.service;
+
+import lombok.extern.log4j.Log4j2;
+
+@Log4j2
+
+public class TestServiceImpl implements TestService {
+
+	@Override
+	public String getOne() {
+		return null;
+	}
+
+	@Override
+	public String getTwo() {
+		return null;
+	}
+	
+}

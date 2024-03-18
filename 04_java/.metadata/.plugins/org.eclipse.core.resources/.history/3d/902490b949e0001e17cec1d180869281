@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+/* 	width: 100vh; */
+/* 	height: 100vh; */
+    margin: 0; /* body 요소의 기본 마진 제거 */
+}
+#warp_common{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/resources/img/1323221745392.jpg');
+    background-position: center  top; 
+    background-repeat: no-repeat;
+     background-size: 1600px;
+    margin-top: -20px;
+}
+#mainBG {
+/*     background-repeat: no-repeat; 배경 이미지 반복 설정 */
+/*     background-size: cover; 배경 이미지 크기 설정 */
+/*     overflow: hidden; */
+/*   	width: 100vh; */
+/* /*     height: 100%; */ */
+/*     margin: auto; */
+}

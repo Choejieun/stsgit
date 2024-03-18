@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body{
+	background-color:pink;
+	margin: auto;
+}
+#a  {
+	background-color: black;
+	width: 500px;
+	margin: auto;
+	color: white;
+	font-size: 30px;
+	padding: 50px;
+}
+a{
+	    font-family: "Batang", sans-serif;
+	color: purple;
+	    text-decoration: none;
+	
+}
+a:hover{
+	color: red;
+    font-family: "맑은 고딕", sans-serif;
+        text-decoration: none;
+    
+}

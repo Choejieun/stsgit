@@ -1,0 +1,397 @@
+@charset "UTF-8";
+
+/*메인설정*/
+body {
+	background-color: #2d2d2d;
+	font-family: "Malgun Gothic", sans-serif;
+	/* 	color: white; */
+}
+
+a {
+	text-decoration: none; /* 하이퍼링크의 밑줄 제거 */
+	color: black;
+}
+
+.redWord {
+	color: #ff80c0;
+}
+
+.blueWord {
+	color: #00ffff;
+}
+
+#warp {
+	margin: auto;
+	width: 1000px;
+	transition: 0.3s;
+	margin-top: 70px;
+}
+/*-----------------------------------------------*/
+/*도구모음*/
+.divColumn {
+	display: flex;
+	flex-direction: column;
+}
+
+.divRow {
+	display: flex;
+	flex-direction: row;
+}
+
+#follower { /*특정 객체에 마우스 올릴 경우 출연[속성]*/
+	width: 50px;
+	height: 20px;
+	background-color: #c0c0c0;
+	border-radius: 10px;
+	position: fixed;
+	z-index: 9999;
+	pointer-events: none;
+	display: none; /* 초기에는 숨겨짐 */
+	text-align: center;
+	padding: 2px;
+	margin-left: 16px;
+	color: #404040;
+}
+
+#targetImg { /*특정 객체에 마우스 올릴 경우 출연[대상]*/
+	
+}
+/*-----------------------------------------------*/
+#topbar {
+	position: fixed; /* 고정 위치 */
+	top: 0; /* 화면 맨 위 */
+	left: 0; /* 화면 맨 왼쪽 */
+	width: 100%; /* 전체 너비 */
+	background-color: #393939; /* 배경색 */
+	color: white; /* 글자색 */
+	padding: 10px 0px; /* 내부 여백 */
+	z-index: 1000; /* 다른 요소 위에 표시 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#topbar input {
+	width: 400px;
+	height: 30px;
+	border-radius: 20px;
+	padding: 0px 20px;
+}
+/*-----------------------------------------------*/
+#headerDesign {
+	color: white;
+	background-color: #393939;
+	border-radius: 15px;
+	padding: 15px 20px;
+	margin: 10px 0px;
+}
+
+#headerDesign .nickname {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#headerDesign .nickname img {
+	border-radius: 18%;
+	height: 60px;
+}
+
+#headerDesign .nickname .namefont {
+	margin-left: 30px;
+	font-size: 16pt;
+	font-family: "Malgun Gothic", sans-serif;
+	color: white;
+	font-weight: 600;
+}
+
+#headerDesign .nickname .grade {
+	width: 50px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #393939;
+	background-color: #a5a5a5;
+	border-radius: 20px;
+	margin-left: 10px;
+	font-weight: 500;
+}
+
+#headerDesign .nickname .clanname {
+	margin-left: 30px;
+	font-size: 10pt;
+	font-family: "Malgun Gothic", sans-serif;
+	color: #a5a5a5;
+}
+/*-----------------------------------------------*/
+#midDesign {
+	display: flex;
+	justify-content: space-between;
+}
+
+.boldfontWhite {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #c8c8c8;
+/* 	filter: drop-shadow(2px 2px 1px #000000); */
+}
+
+.boldfontGreen {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #ffffff;
+/* 	filter: drop-shadow(2px 2px 1px #000000); */
+}
+
+.result {
+	filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.3));
+	margin-top: 12px;
+	font-size: 9pt;
+	position: relative;
+	width: 500px;
+	position: relative;
+}
+
+.result>.result_win {
+	background-color: #393939;
+	border: 1px solid #80d2ff;
+	border-radius: 10px;
+	z-index: 999;
+	cursor: pointer;
+	padding: 12px;
+	text-align: center;
+	border-bottom: 0px;
+}
+
+.blue {
+	background-color: #393939;
+	border: 1px solid #80d2ff;
+	border-top: 0px;
+	margin-bottom: 25px;;
+	text-align: center;
+	border-radius: 10px;
+	padding: 10px;
+	padding-bottom: 20px;
+	margin-top: 2px;
+	transition: 0.5s;
+	margin-bottom: 25px;
+}
+
+.blue:hover {
+	background: linear-gradient(90deg, #80ffe2, #80d2ff);
+	transition: 1.5s;
+}
+
+.result_win>h3 {
+	color: #80d2ff;
+	padding: 0px;
+}
+
+.result_win>a {
+	color: #c0c0c0;
+}
+
+.result>.result_lose {
+	background-color: #393939;
+	border: 1px solid #ff80c0;
+	border-radius: 10px;
+	z-index: 999;
+	cursor: pointer;
+	padding: 12px;
+	text-align: center;
+	padding: 12px;
+	cursor: pointer;
+	z-index: 999;
+	border-bottom: 0px;
+}
+
+.red {
+	background-color: #393939;
+	border: 1px solid #ff80c0;
+	margin-bottom: 25px;;
+	text-align: center;
+	border-radius: 10px;
+	padding: 10px;
+	padding-bottom: 20px;
+	margin-top: 2px;
+	transition: 0.5s;
+	border-top: 0px;
+}
+
+.red:hover {
+	background: linear-gradient(90deg, #ff80ff, #ff80c0);
+	transition: 1.5s;
+}
+
+.result_lose>h3 {
+	color: #ff80c0;
+	padding: 0px;
+}
+
+.result_lose>a {
+	color: #c0c0c0;
+}
+
+h3 {
+	margin: 0px;
+	font-size: 20px;
+}
+
+/* 일자형 유저 정보 */
+.playinfo_main {
+	cursor: pointer;
+	z-index: 1000;
+	font-size: 12pt;
+	margin: auto;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	width: 320px;
+	height: 40px;
+	background-color: #787878;
+	border-radius: 5px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+	display: flex; /* 아이템을 중앙 정렬하기 위해 flex 컨테이너로 설정 */
+	justify-content: space-between;
+	align-items: center; /* 수직 중앙 정렬 */
+	padding-right: 15px;
+}
+
+.playinfo_main>.charactename {
+	 background: linear-gradient(to right, #393939, #787878);
+/* 	background-color: #393939; */
+	text-align: center;
+	height: 24px;
+	width: 150px;
+	color:white;
+	border-radius: 5px;
+	display: flex; /* 아이템을 중앙 정렬하기 위해 flex 컨테이너로 설정 */
+	align-items: center; /* 수직 중앙 정렬 */
+}
+
+.playinfo_main>.charactename>img {
+	margin-right: 4px;
+	border: 5px solid #787878;
+	border-radius: 50px;
+}
+
+/* 일자형 유저 정보 */
+.MY_playinfo_main {
+	font-size: 12pt;
+	margin: auto;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	width: 320px;
+	height: 40px;
+	background-color: #f9dc53;
+	border-radius: 50px;
+	display: flex; /* 아이템을 중앙 정렬하기 위해 flex 컨테이너로 설정 */
+	justify-content: space-between;
+	align-items: center; /* 수직 중앙 정렬 */
+	padding-right: 15px;
+}
+
+.MY_playinfo_main>.MY_charactename {
+	text-align: center;
+	height: 24px;
+	width: 150px;
+	background-color: #ffff80;
+	border-radius: 50px;
+	display: flex; /* 아이템을 중앙 정렬하기 위해 flex 컨테이너로 설정 */
+	align-items: center; /* 수직 중앙 정렬 */
+}
+
+.MY_playinfo_main>.MY_charactename>img {
+	margin-right: 4px;
+	border: 5px solid #f9dc53;
+	border-radius: 50px;
+}
+
+.MY_playinfo_main>i {
+	color: red;
+	font-weight: 700;
+}
+/*-----------------------------------------------*/
+#result_array {
+	width: 450px;
+	overflow: hidden;
+	background-color: #393939;
+	padding: 15px;
+	border-radius: 12px;
+	margin-top: 12px;
+	color: white;
+}
+
+#result_array_tilte {
+	border-bottom: 1px #535353 solid;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#result_array_tilte .area {
+	border-right: 1px #535353 solid;
+	height: 40px;
+	width: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#result_array_tilte .mid {
+	width: 200px;
+}
+
+#result_array_tilte .right {
+	border-right: 0px black solid;
+	width: 100px;
+}
+/**/
+#result_array_main {
+	border-bottom: 1px #535353 solid;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* 	margin-bottom: 10px; */
+}
+
+#result_array_main .area {
+	/* 	border-right: 1px #535353 solid; */
+	height: 50px;
+	width: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#result_array_main .mid {
+	display: flex;
+	justify-content: space-between;
+	width: 160px;
+	margin: 0px 20px;
+}
+
+#result_array_main .right {
+	/* 		border-right: 0px black solid; */
+	width: 100px;
+}
+/*-----------------------------------------------*/
+@media screen and (max-width: 1000px) {
+	#warp {
+		width: 500px;
+		transition: 0.3s
+	}
+	#midDesign {
+		justify-content: center;
+		flex-wrap: wrap; /* 요소가 넘칠 때 줄바꿈 */
+		transition: 0.3s
+	}
+	#result_array {
+		width: 470px;
+	}
+}

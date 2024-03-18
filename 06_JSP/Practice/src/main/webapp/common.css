@@ -1,0 +1,163 @@
+@charset "UTF-8";
+#upload-input{
+	background-color: blue;
+}
+:root {
+  --card-height: 300px;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+* {
+  box-sizing: border-box;
+}
+
+p{
+font-size: 21pt;
+color: white;
+text-align: center;
+}
+
+div{
+	margin: 12px;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #242424;
+}
+
+.area{
+	display: flex;
+	text-align:center;
+	justify-content: center;
+	flex-flow: column;
+}
+
+.card {
+	width: var(--card-width);
+	height: var(--card-height);
+	position: relative; /*영역 부모*/
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin: 0 50px; /*상하 0 / 좌우 50*/
+	margin-bottom: 30px;
+	padding: 0 36px;
+	perspective: 2500px; /*원근효과*/
+}
+
+.cover-image { /*이미지 를 영역에 100% 사이즈로*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrapper{ /*상대적 맞춤, z 1단계 하위*/
+	width: 100%;
+  	transition: all 0.5s;
+  	z-index: -1;
+  	position: absolute;
+}
+
+.card:hover .wrapper{
+	  transform: perspective(900px) translateY(-5%) rotateX(40deg) translateZ(0);
+	/*원근 효과의 깊이 _ 위쪽으로 5%만큼 이동_ X 축을 기준으로 25도만큼 회전(★)_ Z 축을 따라 0만큼 이동*/
+}
+
+.wrapper::before,
+.wrapper::after {
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 80px;
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+}
+
+.wrapper::before { /*탑 부분에 디자인*/
+  top: 0;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+
+.wrapper::after { /*바닥 부분에 디자인*/
+  bottom: 0;
+  opacity: 1;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+
+.card:hover .wrapper::before,
+.wrapper::after {
+  opacity: 1; /*원래 ::before은 안 보이는 상태였는데 마우스 올릴 경우 보이도록 수정*/
+}
+.card:hover .wrapper::after { /*어두운 부분이 더 길어진다*/
+  height: 120px;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg) translate3d(0%, -50%, 100px);;
+    
+  }
+  100% {
+    transform: rotateY(360deg) translate3d(0%, -50%, 100px);;
+  }
+}
+
+.character {
+  width: 100%;
+  opacity: 0; /*숨김처리*/
+  transition: all 0.5s;
+  position: absolute;
+    transform: translate3d(0%, -50%, 100px);
+  animation-fill-mode: forwards; /* 애니메이션이 끝날 때 최종 상태를 유지 */
+  z-index: -1;
+}
+
+.character img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card:hover .character {
+  opacity: 1; /*보임처리*/
+/*   transform: translate3d(0%, -50%, 100px); */
+/* x 축은 수평 방향 이동을 나타냅니다. 여기서는 가로축으로 이동하지 않습니다. */
+/* y 축은 수직 방향 이동을 나타냅니다. -30% 값은 위쪽으로 이동함을 나타냅니다. */
+/* z 축은 화면의 깊이를 나타냅니다. 100px 값은 화면 안쪽으로 이동함을 나타냅니다. */
+/* 이렇게 함으로써, 요소는 위쪽으로 30% 이동하고, 화면 안쪽으로 100px 이동합니다. */
+  animation-name: flip; /* flip 애니메이션 적용 */
+  animation-duration: 0.5s; /* 애니메이션 지속시간 */
+  animation-timing-function: ease; /* 애니메이션 속도 곡선 */
+  animation-iteration-count: 1; /* 애니메이션 반복 횟수 */
+}
+
+.title {
+  width: 100%;
+  opacity: 0; /*숨김처리*/
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+}
+
+.card:hover 
+.title {
+  opacity: 1; /*보임처리*/
+  transform: translate3d(0%, -30%, 100px);
+}

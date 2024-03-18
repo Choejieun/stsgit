@@ -1,0 +1,222 @@
+body {margin: auto; margin-top: 20px;
+    background-color: ivory;
+    line-height: 25px;
+    color: gray;
+    font-size: 12px;
+}
+#rpc_input_text {
+    width: 80px;
+    height: 50px;
+    background-color:rgb(255, 251, 240);
+    resize: none;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    overflow: hidden; /* 스크롤 숨김 */
+    line-height: 50px; /* 텍스트 세로 중앙 정렬 */
+    border-radius: 100px;
+    margin: 3px;
+
+
+}
+
+#rpc_input_text_r1 {
+    width: 80px;
+    height: 50px;
+    background-color: rgb(255, 251, 240);
+    resize: none;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    overflow: hidden; /* 스크롤 숨김 */
+    line-height: 50px; /* 텍스트 세로 중앙 정렬 */
+    border-radius: 100px;
+    margin: 3px;
+    border: 1px solid gold;
+    color: gold;
+
+
+}
+#rpc_input_text_r2 {
+    width: 80px;
+    height: 50px;
+    background-color: rgb(255, 251, 240);
+    resize: none;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    overflow: hidden; /* 스크롤 숨김 */
+    line-height: 50px; /* 텍스트 세로 중앙 정렬 */
+    border-radius: 100px;
+    margin: 3px;
+
+
+}
+#rpc_input_text_r3 {
+    width: 80px;
+    height: 50px;
+    background-color: rgb(255, 251, 240);
+    resize: none;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    overflow: hidden; /* 스크롤 숨김 */
+    line-height: 50px; /* 텍스트 세로 중앙 정렬 */
+    border-radius: 100px;
+    margin: 3px;
+
+
+}
+#rpc_input_text_r4 {
+    width: 80px;
+    height: 50px;
+    background-color: rgb(255, 251, 240);
+    resize: none;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    overflow: hidden; /* 스크롤 숨김 */
+    line-height: 50px; /* 텍스트 세로 중앙 정렬 */
+    border-radius: 100px;
+    margin: 3px;
+
+
+}
+#rpc_input_text_r5 {
+    width: 80px;
+    height: 50px;
+    background-color: rgb(255, 251, 240);
+    resize: none;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    overflow: hidden; /* 스크롤 숨김 */
+    line-height: 50px; /* 텍스트 세로 중앙 정렬 */
+    border-radius: 100px;
+    margin: 3px;
+
+
+}
+#rpc_input_text_r0 {
+    width: 80px;
+    height: 50px;
+    background-color: rgb(255, 251, 240);
+    resize: none;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    overflow: hidden; /* 스크롤 숨김 */
+    line-height: 50px; /* 텍스트 세로 중앙 정렬 */
+    border-radius: 100px;
+    margin: 3px;
+    border: 1px solid red;
+    color: red;
+
+}
+
+#all {
+        margin: auto;
+        width: 700px;
+        height: 500px;
+        border: solid rgb(233, 222, 201) 5px;
+        border-radius: 50px;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #checkbox{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    #n {
+        display: flex;
+        margin: 50px;
+    }
+
+    #my {
+        width:400px;
+        height: 80px;
+        background-color: greenyellow;
+        color: blue;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        overflow: hidden; /* 스크롤 숨김 */
+        line-height: 80px; /* 텍스트 세로 중앙 정렬 */
+        border-radius: 30px;
+        resize: none;
+        border: 0px;
+    }
+    
+    #m {
+        display: flex;
+    }
+
+    #mytext_box1{
+        width: 10px;
+        height: 10px; margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #mytext_box2{
+        width: 10px;
+        height: 10px; margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #mytext_box3{
+        width: 10px;
+        height: 10px; margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #mytext_box4{
+        width: 10px;
+        height: 10px; margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #mytext_box5{
+        width: 10px;
+        height: 10px; margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #mytext_box0{
+        width: 10px;
+        height: 10px; margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    
+
+    #rpc_input_button{
+        background-color: rgb(248, 146, 95);
+        border: 0px;
+        border-radius: 10px;
+        width: 120px;
+        height: 50px;
+        font-family: 'TAEBAEK font', sans-serif;
+        color: white;
+        font-size: 20px;
+    }
+
+    #rpc_input_checkbox{
+      
+        width: 20px;
+    }
+

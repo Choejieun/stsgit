@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="button.css">
+</head>
+<body>
+
+<a href="https://cyphers.nexon.com/game/character/info/thomas" alt="Mythrill" target="_blank">
+<div class="card">
+    <div class="wrapper">
+      <img src="https://i.ibb.co/CmNT1tJ/1627893770968.png" class="cover-image" />
+    </div>
+    <p class="character">토마스찐지버거</p>
+    <img alt="" src="https://i.ibb.co/17WHMj9/1420046938853.png" class="character">
+</div> <!-- card -->
+</a>
+
+<a href="https://cyphers.nexon.com/game/character/info/thomas" alt="Mythrill" target="_blank">
+<div class="card">
+    <div class="wrapper">
+      <img id="uploaded-image" class="cover-image" />
+      </div>
+          <img alt="2번스탠드" src="https://i.ibb.co/17WHMj9/1420046938853.png" class="character">
+    </div>
+</div> <!-- card -->
+</a>
+
+    <input
+      type="file"
+      id="upload-input"
+      accept="image/*"
+      onchange="displayImage()"
+    />
+    <label for="upload-input" id="upload-label">Upload Image</label>
+    
+<script type="text/javascript">
+document
+.getElementById("upload-input")
+.addEventListener("change", displayImage);
+
+function displayImage() {
+const input = document.getElementById("upload-input");
+const file = input.files[0];
+if (file) {
+  const reader = new FileReader();
+  reader.onload = function (event) {
+    const imageDataUrl = event.target.result;
+    updateImageSrc(imageDataUrl);
+  };
+  reader.onerror = function (error) {
+    console.error("Error reading the file:", error);
+  };
+  reader.readAsDataURL(file);
+}
+}
+
+function updateImageSrc(src) {
+const uploadedImage = document.getElementById("uploaded-image");
+uploadedImage.src = src;
+}
+</script>
+
+</body>
+</html>
