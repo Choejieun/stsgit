@@ -26,6 +26,8 @@
 <a href="${cp}/login/loginFom">로그인</a>
 <a href="${cp}/weaher/apitest">날씨</a>
 <a href="${cp}/Cyphers/cyphersSearch">사이퍼즈</a>
+<a href="${cp}/Pr1/Pr1_Search">검색하기</a>
+<a href="${cp}/Pr2/Pr2_Search">유튜브보기</a>
 <%-- <a href="${cp}/guest/getList?currentPage=1">[방명록]</a> --%>
 
 세션 ${id}

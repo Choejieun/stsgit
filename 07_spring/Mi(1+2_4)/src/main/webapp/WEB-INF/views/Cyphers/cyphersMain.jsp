@@ -13,6 +13,11 @@
 <body>
 <div id="warp">
 <div id="topbar">
+<div class="topbar_align">
+<a href="https://cyphers.nexon.com/" target="_blank">
+<img alt="" src="/resources/img/logo.png">
+</a>
+</div>
 <form action="/Cyphers/cyphersMain">
 <input type="text" name="username" autocomplete="off" placeholder="닉네임을 입력해주세요">
 </form>

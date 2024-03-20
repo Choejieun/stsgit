@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="Main.ProcBoard"/>
-    <fullyQualifiedTypeName name="BackEnd.Store_main"/>
     <fullyQualifiedTypeName name="BackEnd.ItemObject"/>
     <fullyQualifiedTypeName name="BackEnd.Store_pay"/>
     <fullyQualifiedTypeName name="com.peisia.util.Cw"/>
@@ -57,7 +55,9 @@
     <fullyQualifiedTypeName name="com.mysql.cj.Session"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="com.peisia.cyphers.matches.Row"/>
-    <fullyQualifiedTypeName name="lombok.Data"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.net.URL"/>
+    <fullyQualifiedTypeName name="java.lang.Deprecated"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="com.peisia.google.Item"/>
 </qualifiedTypeNameHistroy>

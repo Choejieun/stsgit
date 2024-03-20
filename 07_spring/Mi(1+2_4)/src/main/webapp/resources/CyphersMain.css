@@ -70,9 +70,16 @@ a {
 	justify-content: center;
 	align-items: center;
 }
-
+.topbar_align{
+	left: 0px;
+	width: 75px;
+	margin-right: 15px;
+}
+#topbar img{
+	height: 30px;
+}
 #topbar input {
-	width: 400px;
+	width: 380px;
 	height: 30px;
 	border-radius: 20px;
 	padding: 0px 20px;
